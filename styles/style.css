@@ -141,7 +141,7 @@ h3, h4 {
         }
 
         .ctaPrincipal{
-            margin: 0 50px 0 20px;
+            margin: 0 0 0 20px;
         }
 
         .tituloPrincipal>h1{
@@ -452,7 +452,7 @@ h3, h4 {
             color: white;
         }
 
-/* PAGINA TRABAJOS */
+/*---------------------- PAGINA TRABAJOS -------------------------- */
 
 .heroTrabajos{
     height: 60vh;
@@ -522,3 +522,672 @@ width: 500px;
 .trabajoUno>a:hover, .trabajoDos>a:hover {
     color:#002bad;
     }
+
+
+/*---------------------- PAGINA SERVICIOS -------------------------- */
+
+.heroServicios{
+    width: 90vw;
+    margin: auto;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top: -58px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heroServicios>div>img {
+    width: 450px;
+}
+
+.imagenServicios{
+    grid-column: 7/10;
+    grid-row: ;
+}
+
+.ctaServicios{
+    grid-column: 3/7;
+}
+
+.ctaServicios>h1{
+    font-size: 55px;
+    text-align: left;
+}
+
+.ctaServicios>p{
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+#botonServiciosUno{
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    width: 8rem;
+    color: rgb(255, 255, 255);
+    border: solid;
+    background-color: royalblue;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 5px 5px 0px;
+
+}
+
+#botonServiciosUno:hover {
+    color: royalblue;
+    background-color: rgb(255, 255, 255);
+    border-color: royalblue;
+    transition: 0.3s;
+
+}
+
+#botonServiciosDos{
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    width: 8rem;
+    color: royalblue;
+    border: solid;
+    background-color: white;
+    border-color: royalblue;
+    border-width: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+#botonServiciosDos:hover {
+    color: white;
+    background-color: royalblue;
+    transition: 0.3s;
+
+}
+
+
+.beneficiosServicios {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 90vw;
+    margin: auto;
+    height:fit-content;
+    display: grid;
+    align-items: center;
+
+    grid-row-gap: 25px;
+    grid-column-gap: 35px
+
+}
+
+.beneficiosServicios>h2 {
+    text-align: center;
+    grid-column: 1/-1;
+    margin: 50px;
+}
+
+.contenedorUno, .contenedorDos {
+    padding: 20px;
+    box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+}
+
+.contenedorUno{
+grid-column: 2/5;
+display: flex;
+align-items: center;
+}
+
+.contenedorDos{
+ grid-column: 5/8;
+ display: flex;
+ align-items: center;
+}
+
+.tituloContenedor {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.parrafoContenedor {
+    font-size: 15px;
+    font-weight: 200;
+    margin: 5px;
+}
+
+.imagenContenedor {
+    margin:5px;
+    width: 68px;
+}
+
+
+.ctaServiciosDos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px 0px 0px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.sectionCtaServicios {
+    height: 300px;
+    background-image: url(../img/ctaDiseñoWeb.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -20px;
+}
+
+
+.ctaServiciosDos>div>p{
+    margin: 20px 20px 20px 50px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+#botonServiciosTres{
+    display: inline-block;
+    font-size: 25px;
+    width: 16rem;
+    height: 4rem;
+    color: rgb(255, 255, 255);
+    border: solid;
+    background-color: rgba(224, 51, 60, 0.787);
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#botonServiciosTres:hover {
+    color: white;
+    background-color: rgb(255, 61, 71);
+    transition: 0.3s;
+
+}
+
+
+
+
+/* --------------- INICIA LA VISTA HASTA 1200PX  ---------------------*/
+
+@media only screen and  (max-width: 1200px) {
+
+
+    div.imagenPrincipal>img {
+        width: 600px;
+        height: 400px;
+        margin: 0px 20px 0px 0px;
+    }
+
+    .ctaPrincipal{
+        margin: 0 0 0 80px;
+    }
+    
+    /* Inicia sección Servicios */
+
+
+    .servicioUno, .servicioDos, .servicioTres {
+        margin: 0px 10px;
+    }
+
+
+}
+
+
+/* --------------- INICIA LA VISTA HASTA 1024PX  ---------------------*/
+
+@media only screen and  (max-width: 1024px) {
+
+
+    div.imagenPrincipal>img {
+        width: 500px;
+        height: 333px;
+        margin: 0px 20px 0px 0px;
+    }
+
+    div.hero{
+        margin-bottom: 100px;
+
+    }
+
+
+    .tituloPrincipal>h1{
+        font-size:40px;
+    }
+
+    div.descripcionPrincipal>p {
+        font-size:25px;
+        
+    }
+
+    #botonPrincipalUno{
+        font-size: 16px;
+    }
+
+}
+
+
+/* --------------- INICIA LA VISTA HASTA 950PX  ---------------------*/
+
+@media only screen and  (max-width: 950px) {
+
+    div.imagenPrincipal>img {
+       display: none;
+    }
+
+
+    .ctaPrincipal{
+        margin: 15px 20px 15px 20px;
+        text-align: center;
+    }
+
+    .tituloPrincipal>h1{
+        font-size:60px;
+        text-align: center;
+    }
+
+    div.descripcionPrincipal>p {
+        font-size:28px;
+        text-align: center;
+        
+    }
+
+    #botonPrincipalUno{
+        font-size: 22px;
+        padding: 6px;
+
+    }
+
+    /* Inicia sección servicios */
+
+ 
+    .servicios{
+
+        margin: 50px 20px;
+    }
+
+    .servicioUno, .servicioDos, .servicioTres {
+
+        text-align: center;
+        margin: 0px 10px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+    }
+ 
+    /* Inicia sección Testimonios */
+
+    .testimonios {
+        height: 30rem;
+        flex-direction: column;
+        margin: 30px 0 20px 0;        
+    }
+
+    .testimonioUno, .testimonioDos, .testimonioTres {
+        width: 100%;
+        margin:20px;
+        padding: 20px;
+
+    }
+
+    .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
+        width: 70px;
+    }
+
+    .testimonioUno>p, .testimonioDos>p, .testimonioTres>p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Inicia sección Portfolio */
+
+    .portfolio{
+        margin: 30px 10px 10px 10px;
+    }
+
+    .tituloPortfolio{
+        font-size: 28px;
+    }
+
+    .beneficiosPortfolio{
+        font-size: 19px;
+    }
+
+
+    .itemsPortfolio{
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .tituloPortfolio, .beneficiosPortfolio {
+        margin: 5px 15px 5px 15px;
+    }
+
+
+    .imagenPortfolio img{
+        display: none;
+    }
+ 
+    #botonPortfolioUno {
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 15px;
+
+    }
+
+}
+
+/* --------------- INICIA LA VISTA HASTA 768PX  ---------------------*/
+
+@media only screen and  (max-width: 768px) {
+        
+        
+    body > header { 
+        margin-top: 0px; 
+    }
+    
+    
+    /* Estilos individuales */
+    
+        /* Inicia el Header */
+    
+            /* Inicia sección Menú */
+    
+    .logoImagen {
+        width: 230px;
+    }
+
+    nav{
+        position:initial;
+      }
+      
+      nav ul {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #55565a21;
+
+      }
+      
+      nav ul li {
+        width: 100%;
+      }
+    
+            /*Inicia sección portfolio*/
+
+      .tituloPortfolio{
+          text-align: center;
+      }
+
+/* Inicia el Main */
+
+
+    /* Inicia sección Hero */
+        
+                
+    div.hero{
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+    }
+
+    .ctaPrincipal{
+        margin: 30px 20px 15px 20px;
+    }
+
+    .tituloPrincipal>h1{
+        font-size:50px;
+    }
+
+    div.descripcionPrincipal>p {
+        font-size:23px;
+    }
+
+    #botonPrincipalUno{
+        font-size: 18px;
+        padding: 6px;
+
+    }
+
+    
+    /* Inicia sección Servicios */
+
+    .servicios {
+
+        margin:10px 10px;
+        flex-direction: column;
+    }
+
+    .servicioUno, .servicioDos, .servicioTres {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 90vw;
+        margin: 10px 5px 20px 5px;
+        padding:40px;
+    }
+
+
+    .servicioUno>h4, .servicioDos>h4, .servicioTres>h4 {
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    .servicioUno>p, .servicioDos>p, .servicioTres>p {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .servicioUno>a, .servicioDos>a, .servicioTres>a {
+        margin: 10px;
+        font-size: 16px;
+        
+    }
+
+       /* Inicia sección Contacto */
+
+    div.contacto {
+    flex-direction: column;
+    margin: 40px 10px 10px 10px;
+
+    }
+
+    div.contacto h3 {
+        margin: 5px 15px 5px 15px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    div.itemsContacto {
+        margin:10px 10px 20px 10px;
+        text-align: center;
+    }
+
+    div.descripcionContacto>p {
+        text-align: center;
+        font-size: 18px;
+        margin: 10px 0px 5px 0px;
+    }
+
+    
+    div.iconosContacto>a>img {
+        width: 20px;
+        margin: 5px 5px 10px 0px;
+    }
+
+    /* Formulario */
+
+    .contenedorFormulario{
+        display: flex;
+        justify-content: center;
+    }
+
+
+   form.formulario{
+    width: 80%;
+   }
+
+
+   form>fieldset>legend {
+    font-size: 25px;
+   }
+
+    /* Footer */
+
+    .footer{
+        padding: 15px;
+    }
+
+    .footerUno>h4, .footerDos>h4, .footerTres>h4 {
+        font-size: 1rem;
+    }
+
+    /* PAGINA TRABAJOS */
+
+.heroTrabajos{
+    height: 50vh;
+    margin-top: 0px;
+
+}
+
+
+
+/* --------------- INICIA LA VISTA HASTA 480PX  ---------------------*/
+
+@media only screen and  (max-width: 480px) {
+        
+    
+    /* Estilos individuales */
+    
+        /* Inicia el Header */
+    
+            /* Inicia sección Menú */
+    
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+      }
+      
+      nav ul li {
+        font-size:1rem;
+        padding:1rem 1rem;
+        border-top: 1px solid #55565a21;
+      }
+      
+      nav ul li:hover ul{
+        display: none;
+      }
+      
+      
+/* Inicia el Main */
+
+
+    /*Inicia sección hero*/
+
+
+    .descripcionPrincipal
+    {
+        margin: 20px 30px;
+    }
+
+
+    #botonPrincipalUno{
+        margin: 10px;
+    }
+    
+    /* Inicia sección Servicios */
+
+    .servicioUno, .servicioDos, .servicioTres {
+        display: inline-block;
+        width: 85%;
+        margin: 10px 5px 20px 5px;
+        padding:20px 15px;
+    }
+
+    .servicioUno>a>img, .servicioDos>a>img, .servicioTres>a>img {
+        width: 80px;
+        height: 80px;
+        margin: 0 0 10px 0;
+    }
+
+    .servicioUno>a, .servicioDos>a, .servicioTres>a {
+        margin: 2px 0 0 0;
+        
+    }
+
+    /* Inicia sección Testimonios */
+
+
+    .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
+        width: 60px;
+    }
+
+    /* Inicia sección Portfolio */
+
+    
+    .tituloPortfolio{
+        font-size: 28px;
+    }
+
+    .beneficiosPortfolio{
+        list-style: none;
+        font-size: 18px;
+    }
+
+    /* Formulario */
+
+
+   form.formulario{
+    margin: 15px 2px 2px 2px;
+    width: 100%;
+   }
+
+
+   form>fieldset>legend {
+    font-size: 20px;
+   }
+
+
+   fieldset {
+    padding: 25px 30px;
+    }       
+
+    #botonFormularioBorrar{
+        display: none;
+
+    }
+   
+/* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
+
+@media only screen and  (max-width: 320px) {
+        
+    
+       /* Inicia sección Contacto */
+
+    div.contacto {
+    margin: 30px 10px 10px 10px;
+
+    }
+
+    /* Formulario */
+
+   form.formulario{
+
+    margin: 15px 2px 2px 2px;
+    width: 100%;
+   }
+
+
+
