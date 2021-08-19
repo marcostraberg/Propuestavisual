@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Traberg | Primer desafío HTML</title>
+    <title>Marcos Traberg | Segundo desafío HTML</title>
 </head>
+
 <body>
 
     <!--Inicia el header-->
 
     <header>
+
+        <!--Logo-->
+
         <h1>Logo</h1>
+
+        <!--Inicia el menú-->
+
         <nav>
             <ul>
-                <li>Inicio</li>
-                <li>Servicios</li>
-                <li>Portfolio</li>
-                <li>Contacto</li>
+                <li > 
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li><a href="#servicios">Servicios</a>
+                    <ul>
+                        <li><a href="./views/Diseño-web.html">Diseño web</a></li>
+                        <li> <a href="./views/Foto-y-video.html">Foto y video</a></li>
+                        <li> <a href="./views/Redes-y-publicidad.html">Redes y publicidad</a></li>
+                    </ul>
+                </li>
+                <li><a href="#portfolio">Portfolio</a>
+                    <ul>
+                        <li><a href="./views/Trabajos.html">Trabajos</a></li>
+                    </ul>
+    
+                </li>
+                <li> <a href="#contacto">Contacto</a>
+                </li>
             </ul>
-        </nav>   
+        </nav>
+
     </header>
-    <hr>
 
     <!--Inicia el main-->
 
@@ -29,13 +50,19 @@
 
         <!--Inicia sección hero-->
 
+        <div id="hero">
+
         <h2>Título principal</h2>
         <p>Descripción del título princpal</p>
         <h3>Botón princpal</h3>
 
+        </div>
+
         <hr>
 
         <!--Inicia sección servicios-->
+
+        <div id="servicios">
 
             <h4>Imagen servicio 1</h4>
             <h4>Título servicio 1</h4>
@@ -49,9 +76,97 @@
             <h4>Título servicio 3</h4>
             <p>Descripción servicio 3</p>
 
+        </div>
+
+            <!--Inicia tabla de servicios-->
+
+        <table border="1px" cellspacing="3px" cellpadding="15px">
+            <tr>
+                <th>Servicios</th>
+                <th>Descripción</th>
+                <th>Beneficios</th>
+                <th>Precio</th>
+                <th>Detalles</th> 
+            </tr>
+            <tr>
+                <td>Página web</td>
+                <td>Si sos emprendedor o PyME ¿Qué estas esperando? <br><br>
+
+                    ¡Date a conocer y ofrece tu producto o servicio a todo el país!
+                      
+                    <ul>
+                        <li>Llevá tu marca al próximo nivel.</li>
+                        <li>Presencia 24hs.</li>
+
+                    </ul>
+
+                </td>
+                <td>
+                    <ol>
+                        <li>Diseño personalizado.</li>
+                        <li>Autoadministrable.</li>
+                        <li>Hosting y dominio bonificado el primer año.</li>
+                        <li>Correo corporativo.</li>
+                        <li>Certificado SSL.</li>
+                        <li>Pasarelas de pago.</li>
+                        <li>Métodos de envío.</li>
+                    </ol>
+                </td>
+                <td>$15.000</td>
+                <td><a href="./views/Diseño-web.html">mas info</a></td>
+            </tr>
+            <tr>
+                <td>Foto y video</td>
+                <td>¿Tenés tu plataforma creada pero el contenido es poco profesional o no llama la atención?
+<br><br>
+                 ¡Esta es la opción para vos! Contrata el paquete y nosotros nos ocupamos del contenido. 
+                </td> 
+                <td>
+                    <ol>
+                        <li>Hasta 20 fotos de productos.</li>
+                        <li>Fondo blanco - gris - negro.</li>
+                        <li>Adaptables para web y redes.</li>
+                        <li>Video B-ROLL hasta 1 minuto.</li>
+                        <li>Adaptado para Instagram stories.</li>
+                    </ol>
+
+                </td>
+                <td>$14.000</td>
+                <td><a href="./views/Foto-y-video.html">mas info</a></td>
+            </tr>
+            <tr>
+                <td>Redes y publicidad</td>
+                <td>Manejar las redes de una marca no es una tarea sencilla, requiere de tiempo, conocimiento y esfuerzo.
+                    <br>
+                    Para sacarte esa mochila de encima te presentamos el ¡plan de redes!
+                    <br>
+                    Con una planificación, armado y diseño de contenido 100% pensado para tu marca.
+                    <br>
+                    ¿más?.. si estas preparado para dar el próximo salto ¡también nos encargamos de las campañas publicitarias!   
+                </td>
+                <td>
+                    <ol>
+                        <li>Diseño plan de marketing para redes.</li>
+                        <li>Armado de feed mensual para Instagram.</li>
+                        <li>Campaña Google - Red de búsqueda.</li>
+                        <li>Campaña Google - Red de display.</li>
+                        <li>Campañas Facebook.</li>
+                        <li>Campañas Instagram.</li>
+                        <li>Reportes mensuales.</li>
+                    </ol>
+                </td>
+                <td> Desde: <br> $10.000</td>
+                <td><a href="./views/Redes-y-publicidad.html">mas info</a></td>
+            </tr>
+        
+        </table>
+
+        <br>
         <hr>
 
         <!--Inicia sección testimonios-->
+
+        <div id="testimonios">
 
             <h4>Imagen testimonio 1</h4>
             <p>Descripción testimonio 1</p>
@@ -62,11 +177,15 @@
             <h4>Imagen testimonio 3</h4>
             <p>Descripción testimonio 3</p>
 
+        </div>
+
         <hr>
 
         <!--Inicia sección portfolio-->
 
-        <h3>Título del servicio Portfolio</h3>
+        <div id="portfolio">
+
+        <h3>Título del servicio Porfolio</h3>
             <ul>
                 <li>Beneficio 1</li>
                 <li>Beneficio 2</li>
@@ -75,18 +194,85 @@
                 <h4>Botón del servicio Portfolio</h4>
         <h3>Imagen del servicio Portfolio</h3>
 
+        </div>
+
         <hr>
 
         <!--Inicia sección contacto-->
+
+        <div id="contacto">
 
         <h3>Título del servicio Contacto</h3>
             <p>Descripción del servicio Contacto</p>
                 <h5>Ícono de Instagram</h5>
                 <h5>Ícono de Youtube</h5>
                 <h5>Ícono de Whatsapp</h5>
-        <h3>Formulario del servicio Contacto</h3>
-        
-        <hr>
+
+        <form action="#">
+
+            <fieldset>
+
+                <legend> ¡Estemos en contacto! </legend>
+                <br>
+
+                <div>
+                    <label for="text"> Nombre y apellido:</label>
+                </div>
+                <br>
+                    <div>
+                        <input type="text" required placeholder="Ingrese la Información requerida">
+                    </div>
+                <br>
+
+                    <div>
+                    <label for="email"> Email:</label>
+                </div>
+                <br>
+                    <div>
+                        <input type="email" required placeholder="Ingrese la Información requerida">
+                    </div>
+                <br>
+
+                    <div>
+                    <label for="motivos"> Motivo de contacto:</label>
+                    </div>
+                    <br>
+                    <div>
+                        <select name="motivos" required>
+                            <option value="" disabled selected>Seleccione un motivo</option>
+                            <option value="foto">Foto y video</option>
+                            <option value="web">Diseño web</option>
+                            <option value="redes">Redes y publicidad</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="newsletter"> ¿Desea recibir las últimas novedades? </label>
+                        <input type="checkbox" name="newsletter" id="">
+                    </div>
+                    <br>
+
+
+                    <div>
+                        <label for="comentarios">Detalle su consulta:</label>
+                    </div>
+                    <br>
+                    <div>
+                        <textarea name="text_area" id="" cols="30" rows="10" required placeholder="¿Cómo podemos ayudarte?"></textarea>
+                    </div>
+                    <br>
+
+                    <div>
+                    <input type="reset" value="Volver a completar">
+                    <input type="submit" value="Enviar formulario">
+                    </div>
+
+
+            </fieldset>
+        </form>
+        </div>
 
      </main>
 
@@ -100,6 +286,12 @@
 
      </footer>
   
+
+</body>
+</html>
+
+
+
 
 </body>
 </html>
