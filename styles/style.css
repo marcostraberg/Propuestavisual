@@ -67,6 +67,7 @@ h3, h4 {
             flex-wrap:wrap;
             background-color:white;
             box-shadow: 2px 2px 10px 1px rgb(0 0 0 / 10%);
+            z-index: 2;
           }
           
     
@@ -161,7 +162,9 @@ h3, h4 {
         #botonPrincipalUno{
         
             display: inline-block;
-            font-size: 18px;
+            font-size: 20px;
+            text-align: center;
+            width: 10rem;
             color: royalblue;
             border: solid;
             background-color: rgb(255, 255, 255);
@@ -171,12 +174,15 @@ h3, h4 {
             text-decoration: none;
             padding: 8px;
             margin: 20px 0 20px 0;
+            transition: 0.5s ease-in-out;
+            
+             
         }
 
         #botonPrincipalUno:hover {
             color: white;
             background-color: royalblue;
-            transition: 0.3s;
+            transform: scale(1.1,1.1);
 
         }
 
@@ -196,14 +202,23 @@ h3, h4 {
             align-items: center;
 
         }
+    
 
         .servicioUno, .servicioDos, .servicioTres {
 
             text-align: center;
             margin: 0px 30px;
+            width: 300px;
             padding: 40px;
             border-radius: 15px;
             box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+            transition: all 500ms ease-in-out;
+        }
+
+        .servicioUno:hover, .servicioDos:hover, .servicioTres:hover {
+            transform: translate(0px, -20px);
+            box-shadow:2px 2px 20px 1px rgb(0 0 0 / 20%);
+
         }
 
         .servicioUno>a>img, .servicioDos>a>img, .servicioTres>a>img {
@@ -217,7 +232,7 @@ h3, h4 {
         }
 
         .servicioUno>p, .servicioDos>p, .servicioTres>p {
-            font-size: 20px;
+            font-size: 16px;
         }
 
         .servicioUno>a, .servicioDos>a, .servicioTres>a {
@@ -257,18 +272,19 @@ h3, h4 {
             border: 1px solid rgba(255, 255, 255, 0.274);
             padding: 20px;
             border-radius: 10px;
-            transition: background-color 200ms ease-in-out;
+            transition: all 500ms ease-in-out;
         }
 
         .testimonioUno:hover, .testimonioDos:hover, .testimonioTres:hover 
         {
+        
           background-color: #183280;
+          transform: scale(1.015);
+          box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.198);
           
         }
 
-        .testimonioUno>h4, .testimonioDos>h4, .testimonioTres>h4 {
-            font-size: 28px;
-        }
+
 
         .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
             width: 70px;
@@ -278,9 +294,9 @@ h3, h4 {
         }
 
         .testimonioUno>p, .testimonioDos>p, .testimonioTres>p {
-            font-size: 23px;
+            font-size: 18px;
             color: white;
-            font-weight: lighter;
+            font-weight: 400;
         }
 
         /* Inicia sección Portfolio */
@@ -298,7 +314,9 @@ h3, h4 {
         }
 
         .beneficiosPortfolio{
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 2rem;
+            font-weight: 400;
         }
 
 
@@ -318,9 +336,16 @@ h3, h4 {
         .imagenPortfolio img{
             width: 500px;
             margin: 0 40px;
-            box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%); 
+            box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+            transition: all 500ms ease-in-out; 
         }
 
+
+        .imagenPortfolio img:hover {
+            transform: translate(0px, -10px);
+            box-shadow:2px 2px 10px 1px rgb(0 0 0 / 20%);
+
+        }
       
      
         #botonPortfolioUno {
@@ -335,39 +360,69 @@ h3, h4 {
             text-decoration: none;
             padding: 10px;
             margin-top: 20px;
+            transition: 0.5s ease-in-out;
 
         }
 
         #botonPortfolioUno:hover {
             color: white;
             background-color: royalblue;
-            transition: 0.3s;
+            transform: scale(1.1,1.1);
 
         }
 
 
         /* Inicia sección Contacto */
 
+
+          /* Inicia sección Contacto */
+
+        hr{
+            display: inline-block;
+            background: rgb(9,9,121);
+            background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(60,85,158,1) 100%);
+            border-radius: 10px;
+            width: 10vw;
+            height: 7px;
+          
+        }
+
         div.contacto {
-            display: flex;
-            justify-content: center;
-            margin: 30px;
-
+        flex-direction: column;
+        margin: 40px 10px 10px 10px;
+    
         }
-
-        div.itemsContacto, form.formulario{
-            margin:50px;
+    
+        div.contacto h3 {
+            margin: 5px 15px 5px 15px;
+            text-align: center;
+            font-size: 32px;
         }
-
+    
+        div.itemsContacto {
+            margin:50px 10px 50px 10px;
+            text-align: center;
+        }
+    
         div.descripcionContacto>p {
-            font-size: 20px;
-            margin: 10px 0px;
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0px 5px 0px;
         }
-
+    
         
         div.iconosContacto>a>img {
-            width: 23px;
-            margin: 30px 5px 10px 0px;
+            width: 20px;
+            margin: 5px 5px 0PX 0px;
+    
+        }
+
+        .iconosContacto>a>img{
+            transition: all 300ms ease-in-out ;
+        }
+
+        .iconosContacto>a>img:hover{
+            transform: scale(1.2);
         }
 
 
@@ -421,8 +476,25 @@ h3, h4 {
             padding: 8px;
             margin-right: 5px;
             cursor: pointer;
+            transition: all 500ms ease-in-out;
 
         }
+
+        /* Formulario */
+
+        .contenedorFormulario{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+
+        form.formulario{
+            width: 600px;
+        }
+
+
+
 
        #botonFormularioEnviar{
             color: white;
@@ -432,7 +504,18 @@ h3, h4 {
             padding: 8px;
             margin-left: 5px;
             cursor: pointer;
+            transition: all 500ms ease-in-out;
 
+        }
+
+        #botonFormularioBorrar:hover, #botonFormularioEnviar:hover{
+            transform: scale(1.05);
+            border-color:rgb(19, 39, 104); ;
+            background-color: rgb(19, 39, 104);
+        }
+
+        fieldset>div {
+            margin: 10px;
         }
 
 
@@ -445,17 +528,36 @@ h3, h4 {
             display: flex;
             justify-content: space-around;
             align-items: center;
+            
         }
 
-        .footerUno>h4, .footerDos>h4, .footerTres>h4 {
+        .footerUno>h4>a{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+
+        .footerDos>h4{
             text-align: center;
             color: white;
+        }
+
+        .iconosContactoFooter{
+            display: flex;
+            align-items: center;
+        }
+
+        .iconosContactoFooter>a>img {
+            width: 20px;
+            margin: 5px 6px 5PX 6px;
+            display: flex;
+            text-align: center;
         }
 
 /*---------------------- PAGINA TRABAJOS -------------------------- */
 
 .heroTrabajos{
-    height: 60vh;
+    height: 50vh;
     background-image: url(../img/heroTrabajos.jpg);
     background-size: cover;
     display: flex;
@@ -469,7 +571,7 @@ h3, h4 {
 .heroTrabajos>h1{
 
     color: white;
-    font-size: 4.5rem;
+    font-size: 5rem;
 }
 
 .trabajos {
@@ -493,22 +595,24 @@ h3, h4 {
 
 
 .trabajoUno >img, .trabajoDos>img {
-width: 500px;
+width: 450px;
+border: 1px solid rgba(0, 0, 0, 0.055);
+border-radius: 10px;
 }
 
 .trabajoUno >h3, .trabajoDos>h3 {
-    width: 500px;
+    width: 450px;
     margin: 10px 0;
     }
 
 
 .trabajoUno >p, .trabajoDos>p {
-    width: 500px;
+    width: 450px;
     margin: 10px 0;
     }
 
 .trabajoUno >a, .trabajoDos>a {
-    width: 500px;
+    width: 450px;
     display: inline-block;
     margin: 10px 0;
     text-decoration: none;
@@ -522,6 +626,7 @@ width: 500px;
 .trabajoUno>a:hover, .trabajoDos>a:hover {
     color:#002bad;
     }
+
 
 
 /*---------------------- PAGINA SERVICIOS -------------------------- */
@@ -579,9 +684,9 @@ width: 500px;
 }
 
 #botonServiciosUno:hover {
-    color: royalblue;
-    background-color: rgb(255, 255, 255);
-    border-color: royalblue;
+    color: white;
+    background-color: rgb(0, 35, 141);
+    border-color: white;
     transition: 0.3s;
 
 }
@@ -604,7 +709,8 @@ width: 500px;
 
 #botonServiciosDos:hover {
     color: white;
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 0.397);
+    border-color: white;
     transition: 0.3s;
 
 }
@@ -613,7 +719,7 @@ width: 500px;
 .beneficiosServicios {
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 90vw;
     margin: auto;
     height:fit-content;
@@ -634,6 +740,7 @@ width: 500px;
 .contenedorUno, .contenedorDos {
     padding: 20px;
     box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+
 }
 
 .contenedorUno{
@@ -736,13 +843,55 @@ align-items: center;
     /* Inicia sección Servicios */
 
 
+    .servicios{
+        margin: 50px 20px 50px 20px;
+    }
+
     .servicioUno, .servicioDos, .servicioTres {
-        margin: 0px 10px;
+        margin: 0px 15px;
     }
 
 
-}
 
+
+ /* Inicia página trabajos */
+
+    .heroTrabajos{
+        height: 40vh;
+
+    }
+
+    .heroTrabajos>h1{
+        font-size: 4rem;
+    }
+
+
+    .trabajoUno, .trabajoDos {
+
+        margin: -100px 30px 30px 30px;
+        padding: 40px;
+
+    }
+
+    .trabajoUno >img, .trabajoDos>img {
+    width: 350px;
+    }
+
+    .trabajoUno >h3, .trabajoDos>h3 {
+    width: 350px;
+    }
+
+
+    .trabajoUno >p, .trabajoDos>p {
+    width: 350px;
+    }
+
+    .trabajoUno >a, .trabajoDos>a {
+    width: 350px;
+    }
+    
+
+    }
 
 /* --------------- INICIA LA VISTA HASTA 1024PX  ---------------------*/
 
@@ -774,7 +923,114 @@ align-items: center;
         font-size: 16px;
     }
 
-}
+    /* Inicia sección Testimonios */
+
+    .testimonios {
+        height: 30rem;
+        flex-direction: column;
+        margin: 30px 0 20px 0;        
+    }
+
+    .testimonioUno, .testimonioDos, .testimonioTres {
+        width: 100%;
+        margin:20px;
+        padding: 20px;
+
+    }
+
+    .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
+        width: 70px;
+    }
+
+    .testimonioUno>p, .testimonioDos>p, .testimonioTres>p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+
+    /* Inicia sección Portfolio */
+
+    .itemsPortfolio{
+        margin-right: 0px;
+    }
+
+
+    .beneficiosPortfolio{
+        font-size: 1rem;
+
+    }
+
+    #botonPortfolioUno{
+        margin-top: auto;
+    }
+
+    .imagenPortfolio img{
+        width: 400px;
+        margin: 0 40px;
+        box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+    }
+
+
+     /* Footer */
+
+     .footer{
+        padding: 20px;
+        
+    }
+
+    .footerUno>h4>a{
+        font-size: 1.2rem;
+
+    }
+
+    .footerDos>h4{
+        font-size: 1.2rem;
+
+    }
+
+    .iconosContactoFooter>a>img {
+        width: 18px;
+        margin: 5px 6px 5PX 6px;
+  
+    }
+
+    /* Inicia página trabajos */
+
+    
+    .heroTrabajos{
+        height: 30vh;
+
+    }
+
+    .heroTrabajos>h1{
+        font-size: 3rem;
+    }
+
+
+    .trabajoUno, .trabajoDos {
+
+        margin: -50px 15px 30px 15px;
+        padding: 40px;
+
+    }
+
+
+    /* Inicia página servicios */
+
+    .beneficiosServicios {
+    grid-template-columns: repeat(6,1fr);
+    }
+
+    .contenedorUno{
+    grid-column: 1/4;
+    }
+
+    .contenedorDos{
+    grid-column: 4/7;
+    }
+
+    }
 
 
 /* --------------- INICIA LA VISTA HASTA 950PX  ---------------------*/
@@ -813,41 +1069,26 @@ align-items: center;
  
     .servicios{
 
-        margin: 50px 20px;
+        margin: 0px 20px 50px 20px;
     }
 
     .servicioUno, .servicioDos, .servicioTres {
-
+        width: 250px;
         text-align: center;
         margin: 0px 10px;
-        padding: 40px;
+        padding: 20px;
         border-radius: 15px;
         box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
     }
- 
-    /* Inicia sección Testimonios */
 
-    .testimonios {
-        height: 30rem;
-        flex-direction: column;
-        margin: 30px 0 20px 0;        
+    .servicioUno>h4, .servicioDos>h4, .servicioTres>h4 {
+        font-size:22px ;
     }
 
-    .testimonioUno, .testimonioDos, .testimonioTres {
-        width: 100%;
-        margin:20px;
-        padding: 20px;
-
+    .servicioUno>p, .servicioDos>p, .servicioTres>p{
+        font-size:16px ;
     }
 
-    .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
-        width: 70px;
-    }
-
-    .testimonioUno>p, .testimonioDos>p, .testimonioTres>p {
-        font-size: 18px;
-        font-weight: bold;
-    }
 
     /* Inicia sección Portfolio */
 
@@ -860,7 +1101,9 @@ align-items: center;
     }
 
     .beneficiosPortfolio{
-        font-size: 19px;
+        list-style: none;
+        text-align: center;
+        font-size: 16px;
     }
 
 
@@ -884,6 +1127,77 @@ align-items: center;
         margin-top: 15px;
 
     }
+
+    /* Inicia página trabajos */
+
+    .heroTrabajos{
+        height: 40vh;
+
+    }
+
+    .heroTrabajos>h1{
+        font-size: 4rem;
+    }
+
+    .trabajos{
+        flex-direction: column;
+    }
+
+    .trabajoUno {
+        margin: -80px 30px 30px 30px;
+
+    }
+
+    .trabajoDos {
+        margin: 20px 30px 30px 30px;
+
+    }
+
+    .trabajoUno >img, .trabajoDos>img {
+    width: 500px;
+    }
+
+.trabajoUno >h3, .trabajoDos>h3 {
+    width: 500px;
+    }
+
+
+.trabajoUno >p, .trabajoDos>p {
+    width: 500px;
+    }
+
+.trabajoUno >a, .trabajoDos>a {
+    width: 500px;
+    }
+
+
+    /* Inicia página servicios */
+
+    .heroServicios{
+        grid-template-rows: 1fr;
+        height: 300px;
+    }
+
+    
+    div.imagenServicios>img {
+        display: none;
+     }
+ 
+ 
+     .ctaServicios{
+         margin: 15px 20px 15px 20px;
+         text-align: center;
+         grid-column: 1/-1;
+     }
+ 
+     .ctaServicios>h1{
+         text-align: center;
+     }
+ 
+    .beneficiosServicios {
+        margin-top: -70px;
+    }
+    
 
 }
 
@@ -909,6 +1223,7 @@ align-items: center;
 
     nav{
         position:initial;
+        width: auto;
       }
       
       nav ul {
@@ -1023,8 +1338,10 @@ align-items: center;
     
     div.iconosContacto>a>img {
         width: 20px;
-        margin: 5px 5px 10px 0px;
+        margin: 5px 5px 0PX 0px;
+
     }
+
 
     /* Formulario */
 
@@ -1049,15 +1366,143 @@ align-items: center;
         padding: 15px;
     }
 
-    .footerUno>h4, .footerDos>h4, .footerTres>h4 {
+    .footerUno>h4>a, .footerDos>h4 {
         font-size: 1rem;
     }
+
+    .footerUno>h4{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    
+    }
+
+    .iconosContactoFooter>a>img {
+        width: 16px;
+        margin: 5px 6px 5PX 6px;
+  
+    }
+
 
     /* PAGINA TRABAJOS */
 
 .heroTrabajos{
     height: 50vh;
     margin-top: 0px;
+
+}
+
+    /* Inicia página trabajos */
+
+    .heroTrabajos{
+        height: 30vh;
+
+    }
+
+    .heroTrabajos>h1{
+        font-size: 3rem;
+    }
+
+    .trabajos{
+        flex-direction: column;
+    }
+
+    .trabajoUno {
+        margin: -60px 30px 30px 30px;
+
+    }
+
+    .trabajoDos {
+        margin: 20px 30px 30px 30px;
+
+    }
+
+    .trabajoUno >img, .trabajoDos>img {
+    width: 350px;
+    }
+
+    .trabajoUno >h3, .trabajoDos>h3 {
+    width: 350px;
+    }
+
+
+    .trabajoUno >p, .trabajoDos>p {
+    width: 350px;
+    }
+
+    .trabajoUno >a, .trabajoDos>a {
+    width: 350px;
+    }
+
+
+    /* Inicia página servicios */
+
+     .ctaServicios{
+         margin: 80px 20px 15px 20px;
+     }
+ 
+ 
+    .beneficiosServicios {
+        margin-top: 0px;
+    }
+    
+
+    .beneficiosServicios {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 1.5rem;
+    }
+
+
+    .beneficiosServicios>h2 {
+        margin: 30px 30px 30px 30px;
+    }
+
+
+    .contenedorUno{
+    grid-column: 1;
+    }
+
+    .contenedorDos{
+    grid-column: 1;
+    }
+
+    .tituloContenedor {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .parrafoContenedor {
+        font-size: 14px;
+        font-weight: 200;
+        margin: 5px;
+    }
+
+    .imagenContenedor {
+        margin:5px 5px 5px 25px;
+        width: 68px;
+    }
+
+
+    .ctaServiciosDos>div>p{
+        font-size: 35px;
+    }
+
+
+    #contenedorBotonTres {
+        display: flex;
+        justify-content: center;
+    }
+
+    #botonServiciosTres{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        font-size: 20px;
+        width: 10rem;
+        height: 3rem;
+    }
+
 
 }
 
@@ -1097,6 +1542,12 @@ align-items: center;
     /*Inicia sección hero*/
 
 
+    .tituloPrincipal>h1{
+        font-size: 2rem;
+        margin: 10px;
+
+    }
+
     .descripcionPrincipal
     {
         margin: 20px 30px;
@@ -1130,20 +1581,28 @@ align-items: center;
     /* Inicia sección Testimonios */
 
 
+    .testimonios{
+        height: auto;
+    }
+
     .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
         width: 60px;
     }
 
     /* Inicia sección Portfolio */
 
-    
+
+
     .tituloPortfolio{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .beneficiosPortfolio{
-        list-style: none;
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .beneficiosPortfolio>li{
+        margin: 5px;
     }
 
     /* Formulario */
@@ -1168,6 +1627,202 @@ align-items: center;
         display: none;
 
     }
+
+
+     /* Footer */
+
+     .footer{
+        padding: 15px;
+    }
+
+    .footerUno, .footerDos, .footerTres{
+        margin: 5px;
+    }
+
+    .footerUno>h4>a, .footerDos>h4 {
+        font-size: 0.8rem;
+    }
+
+    .footerUno>h4{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .iconosContactoFooter>a>img {
+        width: 14px;
+        margin: 5px 6px 5PX 6px;
+  
+    }
+
+
+
+  /* Inicia página trabajos */
+
+  .heroTrabajos{
+    height: 30vh;
+    background-image: none;
+
+    }
+
+    .heroTrabajos>h1{
+        font-size: 3rem;
+        color: royalblue;
+        margin-top: -58px;
+    }
+
+    .trabajos{
+        margin: 0px;
+    }
+
+    .trabajoUno {
+        margin: -80px 20px 20px 20px;
+
+    }
+
+    .trabajoDos {
+        margin: 20px 20px 20px 20px;
+
+    }
+
+    .trabajoUno >img, .trabajoDos>img {
+    display: none;
+
+    }
+
+    .trabajoUno >h3, .trabajoDos>h3 {
+    width: 200px;
+    font-size: 1.2rem;
+
+    }
+
+
+    .trabajoUno >p, .trabajoDos>p {
+    width: 200px;
+    font-weight: lighter;
+    font-size: 1rem;
+    }
+
+    .trabajoUno >a, .trabajoDos>a {
+    width: 200px;
+    }
+
+    /* Inicia página servicios */
+
+
+    .heroServicios{
+        grid-template-rows: 1fr;
+        height: auto;
+        overflow:visible;
+        margin-bottom: 10px;
+    }
+
+ 
+     .ctaServicios>h1{
+         font-size: 3rem;
+         text-align: center;
+         margin-bottom: 5px;
+     }
+ 
+     .ctaServicios>p{
+         font-size: 1.2rem;
+         margin-bottom: 20px;
+     }
+
+     #botonServiciosUno{
+        width: auto;
+    }
+    
+    
+    #botonServiciosDos{
+        width: auto;
+    }
+
+
+    .beneficiosServicios {
+        margin-top: 0px;
+    }
+    
+
+    .beneficiosServicios{
+        height: 1150px;
+        row-gap: 1rem;
+    }
+
+ 
+    .beneficiosServicios>h2 {
+        margin: 30px 30px 30px 30px;
+    }
+
+
+    .contenedorUno{
+    grid-column: 1;
+    }
+
+    .contenedorDos{
+    grid-column: 1;
+    }
+
+    .tituloContenedor {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .parrafoContenedor {
+        font-size: 12px;
+        font-weight: 200;
+        margin: 5px;
+    }
+
+    .imagenContenedor {
+        margin:5px 5px 5px 25px;
+        width: 48px;
+    }
+
+
+    .ctaServiciosDos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 50px 0px 0px 0px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.719);
+    }
+
+
+
+    .sectionCtaServicios {
+        height: 200px;
+    }
+
+
+    .ctaServiciosDos>div>p{
+        margin: 20px 20px 0px 20px;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+    }
+
+
+    #botonServiciosTres{
+        font-size: 16px;
+        font-weight: bold;
+        width: 10rem;
+        height: 3rem;
+        background-color: rgba(224, 51, 60, 0.787);
+        border-width: 0px;
+    }
+
+
+
+    
+
+}
+
    
 /* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
 
