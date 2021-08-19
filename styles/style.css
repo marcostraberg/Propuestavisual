@@ -9,6 +9,13 @@
 
 }
 
+
+body > header {
+    
+    margin-top: 150px;
+
+}
+
 h1{
     color: #002bad;
     font-size:50px;
@@ -46,58 +53,78 @@ h3, h4 {
 
         /* Inicia sección Menú */
 
-
-        .logo{
-            display: flex;
-            justify-content: center;
-        }
-
-
-
-        .logoImagen {
-            width: 250px;
-        }
-
-        .menuLista {
-            list-style: none;
-            font-size:0;
-            background-color:rgb(47, 56, 173);
-        }
-
-        .menuItem {
-            display: inline-block;
-            width: 25%;
-            position:relative;
-            border: 1px solid white;
-            text-align:center;
-        }
-
-        .subMenu {
-            position: absolute;
-            display: none;
-            width:100%;
-        }
-
-        .subMenu li {
-            display: block;
-            width:100%;
-            border: 1px solid white;
-        }
-        
-        .menuLista li:hover ul {
-            display:block;
-            background-color: royalblue;
-        }
-
-        .menuLista a{
-            color: rgb(255, 255, 255);
-            text-decoration-line: none;
-            font-size: 18px;
-            line-height: 1.8;
-            
-        }
-
+         .logoImagen {
+                width: 250px;
+            }
     
+          nav{
+            position: fixed;
+            top: 0; right: 0; left:0;
+            width:100vw;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            flex-wrap:wrap;
+            background-color:white;
+            box-shadow: 2px 2px 10px 1px rgb(0 0 0 / 10%);
+          }
+          
+    
+          
+          nav ul {
+            display:flex;
+          }
+          
+          nav ul li {
+            position:relative;
+            list-style:none;
+            font-size:1.1rem;
+            padding:1.5rem 1.3rem;
+            cursor:pointer;
+          }
+          
+          nav ul ul{
+            position:absolute;
+            display:flex;
+            flex-direction:column;
+            padding:1rem;
+            width:12rem;
+            box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+            border-radius:10px;
+            background:white;
+            top:4rem;
+            left:-0.8rem;
+            opacity:0;
+            visibility:hidden;
+            transition:opacity 200ms ease-in-out;
+          }
+          
+          nav ul ul li{
+            transition:background-color 200ms ease-in-out;
+            padding: 0.5rem 1rem;
+            border-radius:5px;
+          }
+          
+          nav ul ul li:hover{
+            background-color:#E9F4FF;
+          }
+          
+          nav ul li:hover ul{
+            opacity:1;
+            visibility:visible;
+          }
+          
+          nav a{
+            text-decoration:none;
+            color:black;
+          }
+          
+          nav>ul>li>a{
+          font-weight:bold;
+          }
+          
+          
+          
          
 
     /* Inicia el Main */
@@ -107,12 +134,15 @@ h3, h4 {
 
         div.hero{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            margin-bottom: 100px;
 
         }
 
-
+        .ctaPrincipal{
+            margin: 0 50px 0 20px;
+        }
 
         .tituloPrincipal>h1{
             color: #002bad;
@@ -120,12 +150,12 @@ h3, h4 {
             font-weight: bold;
             letter-spacing: 1px;
             text-align: left;
-        
         }
 
         div.descripcionPrincipal>p {
             font-size:28px;
             text-align: left;
+            
         }
 
         #botonPrincipalUno{
@@ -140,7 +170,7 @@ h3, h4 {
             border-width: 1px;
             text-decoration: none;
             padding: 8px;
-            margin: 50px 0 0 0;
+            margin: 20px 0 20px 0;
         }
 
         #botonPrincipalUno:hover {
@@ -153,6 +183,7 @@ h3, h4 {
         div.imagenPrincipal>img {
             width: 650px;
             height: 433px;
+            margin: 0px 20px 0px 50px;
         }
 
         /* Inicia sección Servicios */
@@ -170,12 +201,15 @@ h3, h4 {
 
             text-align: center;
             margin: 0px 30px;
-
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
         }
 
         .servicioUno>a>img, .servicioDos>a>img, .servicioTres>a>img {
             width: 100px;
             height: 100px;
+            margin: 0 0 15px 0;
         }
 
         .servicioUno>h4, .servicioDos>h4, .servicioTres>h4 {
@@ -186,30 +220,67 @@ h3, h4 {
             font-size: 20px;
         }
 
+        .servicioUno>a, .servicioDos>a, .servicioTres>a {
+            text-decoration: none;
+            color: rgb(143, 172, 226);
+            display: inline-block;
+            margin: 20px 0 0 0;
+            transition: color 200ms ease-in-out;
+            
+        }
+
+        .servicioUno>a:hover, .servicioDos>a:hover, .servicioTres>a:hover {
+            color:#002bad;
+        }
+
 
         /* Inicia sección Testimonios */
 
     
         .testimonios {
-            background-image: url("../img/fondoTestimonial.jpg");
-            background-size: cover;
-            height: 300px;
+
+            background-color: #3C559E;
+            height: 18.75rem;
             padding: 20px;
             display: flex;
-            justify-content: space-around;
-            align-items: center;       
+            justify-content: center;
+            align-items: center; 
+            margin: 100px 0 50px 0;      
         }
 
         .testimonioUno, .testimonioDos, .testimonioTres {
+            display: flex;
+            justify-content: center;
             text-align: center;
+            margin:30px;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.274);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 200ms ease-in-out;
+        }
+
+        .testimonioUno:hover, .testimonioDos:hover, .testimonioTres:hover 
+        {
+          background-color: #183280;
+          
         }
 
         .testimonioUno>h4, .testimonioDos>h4, .testimonioTres>h4 {
             font-size: 28px;
         }
 
+        .testimonioUno>img, .testimonioDos>img, .testimonioTres>img {
+            width: 70px;
+            border: 2px solid white;
+            border-radius: 100%;
+            margin-right: 20px;
+        }
+
         .testimonioUno>p, .testimonioDos>p, .testimonioTres>p {
-            font-size: 20px;
+            font-size: 23px;
+            color: white;
+            font-weight: lighter;
         }
 
         /* Inicia sección Portfolio */
@@ -222,6 +293,15 @@ h3, h4 {
 
         }
 
+        .tituloPortfolio{
+            font-size: 28px;
+        }
+
+        .beneficiosPortfolio{
+            font-size: 18px;
+        }
+
+
         .itemsPortfolio{
             display: flex;
             flex-direction: column;
@@ -229,20 +309,22 @@ h3, h4 {
 
         }
 
-        .tituloPortfolio, .beneficiosPortfolio, #botonPortfolioUno  {
+        .tituloPortfolio, .beneficiosPortfolio {
             margin: 15px;
         }
 
+    
 
         .imagenPortfolio img{
-            width: 350px;
+            width: 500px;
             margin: 0 40px;
-      
-
+            box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%); 
         }
 
+      
+     
         #botonPortfolioUno {
-            font-size: 13px;
+            font-size: 15px;
             width: fit-content;
             color: royalblue;
             border: solid;
@@ -251,7 +333,8 @@ h3, h4 {
             border-width: 1px;
             border-radius: 5px;
             text-decoration: none;
-            padding: 5px;
+            padding: 10px;
+            margin-top: 20px;
 
         }
 
@@ -267,15 +350,18 @@ h3, h4 {
 
         div.contacto {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin: 30px;
 
         }
 
-        
+        div.itemsContacto, form.formulario{
+            margin:50px;
+        }
 
         div.descripcionContacto>p {
             font-size: 20px;
+            margin: 10px 0px;
         }
 
         
@@ -294,13 +380,17 @@ h3, h4 {
        form>fieldset>legend {
         font-size: 20px;
         font-weight: bold;
+        text-align: center;
+
        }
 
 
        fieldset {
         border-radius: 8px;
-        border-color: rgb(143, 172, 226);
-        padding: 25px;
+        border:0px ;
+        box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+        padding: 35px 45px;
+        color: #3C559E;
         }       
 
         .campoFormulario {
@@ -313,7 +403,9 @@ h3, h4 {
         }
 
         .campoFormulario::placeholder { 
-            color: rgb(143, 172, 226); 
+            color: rgb(143, 172, 226);
+            padding-left: 5px;
+            padding-top: 2px;
         }
 
         .botonesFormulario{
@@ -323,21 +415,23 @@ h3, h4 {
 
         #botonFormularioBorrar{
             color: white;
-            background-color: rgb(214, 103, 103);
+            background-color: rgb(143, 172, 226);
             border: solid 1px;
             border-radius: 3px;
             padding: 8px;
             margin-right: 5px;
+            cursor: pointer;
 
         }
 
        #botonFormularioEnviar{
             color: white;
-            background-color: rgb(103, 214, 140);
+            background-color: #3C559E;
             border: solid 1px;
             border-radius: 3px;
             padding: 8px;
             margin-left: 5px;
+            cursor: pointer;
 
         }
 
@@ -345,7 +439,7 @@ h3, h4 {
         /* Footer */
 
         .footer{
-            background-color: rgba(101, 136, 243, 0.445);
+            background-color: #3C559E;
             padding: 20px;
             margin-top: 20px;
             display: flex;
@@ -353,12 +447,78 @@ h3, h4 {
             align-items: center;
         }
 
-        .footerUno, .footerDos, .footerTres {
-
+        .footerUno>h4, .footerDos>h4, .footerTres>h4 {
             text-align: center;
-
+            color: white;
         }
 
+/* PAGINA TRABAJOS */
+
+.heroTrabajos{
+    height: 60vh;
+    background-image: url(../img/heroTrabajos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -58px;
+
+}
+
+.heroTrabajos>h1{
+
+    color: white;
+    font-size: 4.5rem;
+}
+
+.trabajos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.trabajoUno, .trabajoDos {
+
+    text-align: left;
+    background-color: white;
+    margin: -100px 30px 30px 30px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow:2px 2px 10px 1px rgb(0 0 0 / 10%);
+
+}
 
 
+.trabajoUno >img, .trabajoDos>img {
+width: 500px;
+}
 
+.trabajoUno >h3, .trabajoDos>h3 {
+    width: 500px;
+    margin: 10px 0;
+    }
+
+
+.trabajoUno >p, .trabajoDos>p {
+    width: 500px;
+    margin: 10px 0;
+    }
+
+.trabajoUno >a, .trabajoDos>a {
+    width: 500px;
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: rgb(143, 172, 226);
+    font-size: 1.1rem;
+    transition: color 200ms ease-in-out;
+    }
+    
+
+
+.trabajoUno>a:hover, .trabajoDos>a:hover {
+    color:#002bad;
+    }

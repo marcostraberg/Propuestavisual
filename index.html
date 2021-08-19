@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Traberg | Quinto desafío entrega</title>
+    <title>Marcos Traberg | Sexto desafío</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,48 +12,38 @@
 </head>
 
 <body>
-
+    
     <!--Inicia el header-->
+        
+<header>
+        
+                <!--Inicia el menú-->
+        
+<section>
+        <nav>
+            <a href="./index.html"><img src="./img/logo.png" alt="Logo Propuestavisual" class="logoImagen"></img></a>
+            
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a>
+                <ul>
+                    <li><a href="./views/diseñoWeb.html">Diseño web</a></li>
+                    <li><a href="./views/fotoYvideo.html">Foto y video</a></li>
+                    <li><a href="./views/redesYpublicidad.html">Social media</a></li>
+                </ul>
+                </li>
+                <li><a href="#portfolio">Portfolio</a>
+                <ul>
+                    <li><a href="./views/trabajos.html">Trabajos</a></li>
+                </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+          </nav>
 
-    <header>
-
-        <section>
-
-            <!--Logo-->
-
-            <div class="logo">
-
-                <a href="index.html"><img src="./img/logo.png" alt="Logo Propuestavisual" class="logoImagen"></a>
-
-            </div>
-
-            <!--Inicia el menú-->
-
-            <div>
-                <nav>
-                    <ul class="menuLista">
-                        <li class="menuItem"> 
-                            <a href="index.html" >Inicio</a>
-                        </li>
-                        <li class="menuItem"><a href="#servicios">Servicios</a>
-                            <ul class="subMenu">
-                                <li><a href="./views/diseñoWeb.html">Diseño web</a></li>
-                                <li> <a href="./views/fotoYvideo.html">Foto y video</a></li>
-                                <li> <a href="./views/redesYpublicidad.html">Redes y publicidad</a></li>
-                            </ul>
-                        </li>
-                        <li class="menuItem"><a href="#portfolio">Portfolio</a>
-                            <ul class="subMenu">
-                                <li><a href="./views/trabajos.html">Trabajos</a></li>
-                            </ul>
-                        </li>
-                        <li class="menuItem"> <a href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </section>
-    </header>
+  </header>
 
     <!--Inicia el main-->
 
@@ -66,7 +56,8 @@
         <section>
             <div class="hero" id="hero">
 
-                <div>
+
+                <div class="ctaPrincipal">
                     <div class="tituloPrincipal">
                         <h1>Título principal</h1>
                     </div>
@@ -87,7 +78,7 @@
 
             </div>
         </section>
-        <hr>
+
 
         <!--Inicia sección servicios-->
 
@@ -98,24 +89,27 @@
                     <a href="views/diseñoWeb.html"><img src="./img/diseñoWeb.png" alt="Servicio Diseñoweb"></a>
                     <h4>Título servicio 1</h4>
                     <p>Descripción servicio 1</p>
+                    <a href="views/diseñoWeb.html">mas info</a>
                 </div>
 
                 <div class="servicioDos">
                     <a href="views/fotoYvideo.html"><img src="./img/fotoVideo.png" alt="Servicio Foto y Video"></a>
                     <h4>Título servicio 2</h4>
                     <p>Descripción servicio 2</p>
+                    <a href="views/fotoYvideo.html">mas info</a>
                 </div>
 
                 <div class="servicioTres">
                     <a href="views/redesYpublicidad.html"><img src="./img/redes.png" alt="Servicio Redes y Publicidad"></a>
                     <h4>Título servicio 3</h4>
                     <p>Descripción servicio 3</p>
+                    <a href="views/redesYpublicidad.html">mas info</a>
                 </div>
 
             </div>
         </section>
 
-        <hr>
+
 
         <!--Inicia sección testimonios-->
 
@@ -123,23 +117,22 @@
             <div class="testimonios" id="testimonios">
 
                 <div class="testimonioUno">
-                    <h4>Imagen testimonio 1</h4>
-                    <p>Descripción testimonio 1</p>
+                    <img src="./img/testimonioUno.png" alt="testimonio servicio">
+                    <p>"Descripción testimonio"</p>
                 </div>
 
                 <div class="testimonioDos">
-                    <h4>Imagen testimonio 2</h4>
-                    <p>Descripción testimonio 2</p>
+                    <img src="./img/testimonioDos.png" alt="testimonio servicio">
+                    <p>"Descripción testimonio"</p>
                 </div>
 
                 <div class="testimonioTres">
-                    <h4>Imagen testimonio 3</h4>
-                    <p>Descripción testimonio 3</p>
+                    <img src="./img/testimonioTres.png" alt="testimonio servicio">
+                    <p>"Descripción testimonio"</p>
                 </div>
 
             </div>
         </section>
-        <hr>
 
         <!--Inicia sección portfolio-->
 
@@ -159,20 +152,22 @@
                     <a href="#" id="botonPortfolioUno">Botón del servicio Portfolio</a>
            
                 </div>
+             
+                    <div class="imagenPortfolio">
+                        <img src="./img/portfolio.jpg" alt="" id="imagenPortfolioUno">
 
-                <div class="imagenPortfolio">
-                    <img src="./img/portfolio.jpg" alt="">
-                </div>
+                    </div>
+            
             
             </div>
         </section>
-        <hr>
+   
 
         <!--Inicia sección contacto-->
 
         <section>
             <div class="contacto" id="contacto">
-                <div>
+                <div class="itemsContacto">
 
                     <div>
                         <h3>Título del servicio Contacto</h3>
@@ -192,7 +187,7 @@
                 </div>
 
                 <div>
-                    <form action="#">
+                    <form action="#" class="formulario">
 
                         <fieldset>
 
