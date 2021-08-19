@@ -1,0 +1,828 @@
+/* Variables */
+
+$principal:royalblue;
+$sombreado: 2px 2px 10px 1px rgba(0, 0, 0, 0.100);
+$medidaBase:20px;
+$heroH:433px;
+$heroW:650px;
+
+/* Inicia el Main */
+
+
+        /* Inicia sección Hero */
+
+        .hero{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: $medidaBase*5;
+
+            &__ctaPrincipal{
+                margin-left: $medidaBase,
+            }
+
+            &__tituloPrincipal>h1{
+                color: #002bad;
+                font-size:($medidaBase*2)+10px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-align: left;
+            }
+
+            &__descripcionPrincipal>p{
+                font-size:28px;
+                text-align: left;
+            }
+
+
+            &__botonPrincipalUno{
+
+                display: inline-block;
+                font-size: $medidaBase;
+                text-align: center;
+                width: 10rem;
+                color: $principal;
+                border: solid;
+                background-color: rgb(255, 255, 255);
+                border-color:$principal;
+                border-radius: 5px;
+                border-width: 1px;
+                text-decoration: none;
+                padding: 8px;
+                margin: $medidaBase 0 $medidaBase 0;
+                transition: 0.5s ease-in-out;   
+                
+                &:hover{
+                    color: white;
+                    background-color: $principal;
+                    transform: scale(1.1,1.1);
+                }
+
+            }
+
+            &__imagenPrincipal>img{
+                width: $heroW;
+                height: $heroH;
+                margin-left: $medidaBase+10px;
+            }
+
+        }
+
+
+
+        /* Inicia sección Servicios */
+
+        .servicios {
+
+            margin:($medidaBase*2)+10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .servicioUno, .servicioDos, .servicioTres {
+
+                text-align: center;
+                margin: 0px ($medidaBase+10px);
+                width: $medidaBase*15;
+                padding: $medidaBase*2;
+                border-radius: 15px;
+                box-shadow:$sombreado;
+                transition: all 500ms ease-in-out;
+
+                a{
+                    text-decoration: none;
+                    color: rgb(143, 172, 226);
+                    display: inline-block;
+                    margin: $medidaBase 0 0 0;
+                    transition: color 200ms ease-in-out; 
+                    
+                    &:hover{
+                        color:#002bad;
+                    }
+
+                    img{
+                        width: $medidaBase*5;
+                        height: $medidaBase*5;
+                        margin: 0 0 15px 0;
+                    }
+                }
+
+                h4{
+                    font-size: $medidaBase+8px;
+                }
+
+                p{
+                    font-size: 16px;  
+                }
+
+                &:hover{
+                    transform: translate(0px, -20px);
+                    box-shadow:2px 2px $medidaBase 1px  rgba(0, 0, 0, 0.200);
+                }
+            }
+
+        }
+
+
+        /* Inicia sección Testimonios */
+
+        .slider-area{
+            background-color: #3C559E;
+            padding: ($medidaBase*2)+10px 0;
+            margin: 5rem 0;
+
+            .carousel-indicators{
+                bottom: $medidaBase - ($medidaBase*2)+10px;
+            }
+
+            .img-area{
+                display: flex;
+                width: $medidaBase*5;
+                height: $medidaBase*5;
+                margin: auto;  
+
+                img{
+                    border: 2px solid white;
+                    border-radius: 50%; 
+                   }
+            }
+
+            .carousel-caption{
+                position: static;
+                padding-bottom: $medidaBase;
+
+                h3{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+
+                p{
+                    font-size: 1rem;
+                    font-weight: 400;   
+                }
+            }
+        }
+
+        /* Inicia sección Portfolio */
+
+
+        .portfolio{
+            display: flex;
+            justify-content: center;
+            margin: $medidaBase+10px;
+            align-content: center;
+
+            &__items{
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px 0 $medidaBase*2;
+
+                h3{
+                    font-size: $medidaBase+8px;
+                    margin: 15px;
+                }
+            }
+
+
+            &__beneficios{
+                font-size: 16px;
+                line-height: 2rem;
+                font-weight: 400;
+                margin: 15px;
+            }
+
+            &__imagen{
+                display: flex;
+                align-items: center; 
+
+                img {
+                    width: ($heroW)-150px;
+                    margin: 0 $medidaBase*2;
+                    box-shadow:$sombreado;
+                    transition: all 500ms ease-in-out;
+
+                    &:hover{
+                        transform: translate(0px, -10px);
+                        box-shadow:2px 2px 10px 1px rgba(0, 0, 0, 0.200);
+                    }
+                }
+            }
+
+            &__boton{
+                font-size: 15px;
+                width: fit-content;
+                color: $principal;
+                border: solid;
+                background-color: white;
+                border-color: $principal;
+                border-width: 1px;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 10px;
+                transition: 0.5s ease-in-out;
+                margin-left: ($medidaBase*2)+10px;
+
+                &:hover{
+                    color: white;
+                    background-color: $principal;
+                    transform: scale(1.1,1.1);
+                }
+            }
+
+        }
+
+
+        /* Inicia sección Contacto */
+
+
+          /* Inicia sección Contacto */
+
+        div.contacto {
+        flex-direction: column;
+        margin: $medidaBase*2 10px 10px 10px;
+
+            .itemsContacto{
+                margin:($medidaBase*2)+10px 10px ($medidaBase*2)+10px 10px;
+                text-align: center;
+
+                h3{
+                    margin: 5px 15px 5px 15px; /* LISTO*/
+                    text-align: center;
+                    font-size: $medidaBase+12px;
+                    }
+
+                .iconosContacto{
+
+                    img{
+                        width: $medidaBase;
+                        margin: 5px 5px 0PX 0px;
+                        transition: all 300ms ease-in-out ;
+
+                        &:hover{
+                            transform: scale(1.2);      
+                        }
+                    }
+
+                }
+
+                hr{
+                    display: inline-block;
+                    background: rgb(9,9,121) ;
+                    background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(60,85,158,1) 100%);
+                    border-radius: 10px;
+                    width: 10vw;
+                    height: 7px !important;
+                    opacity: 0.75;
+                  
+                }
+
+            }
+    
+        }
+    
+
+        /* Formulario */
+
+        .contenedorFormulario{
+            display: flex;
+            justify-content: center;
+            margin-bottom: $medidaBase+10px;
+
+            .formulario{
+                width: ($heroW)-50px;
+
+                fieldset {
+                    border-radius: 8px;
+                    border:0px ;
+                    box-shadow:$sombreado;
+                    padding: 35px 45px;
+                    color: #3C559E;
+
+                    div{
+                        margin:10px;
+                    }
+
+                    legend {
+                        font-size: $medidaBase;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    .campoFormulario {
+                        border: 1px solid;
+                        border-color: rgb(143, 172, 226);
+                        border-radius: 2px;
+                        outline: none;
+                        color: rgb(143, 172, 226);
+                        width: 100%;
+
+                        &::placeholder{
+                            color: rgb(143, 172, 226);
+                            padding-left: 5px;
+                            padding-top: 2px;
+                        }
+                    }
+
+                    .botonesFormulario{
+                        display: flex;
+                        justify-content: center;
+
+                        #botonFormularioBorrar{
+                            color: white;
+                            background-color: rgb(143, 172, 226);
+                            border: solid 1px;
+                            border-radius: 3px;
+                            padding: 8px;
+                            margin-right: 5px;
+                            cursor: pointer;
+                            transition: all 500ms ease-in-out;
+
+                            &:hover{
+                                transform: scale(1.05);
+                                border-color:rgb(19, 39, 104); ;
+                                background-color: rgb(19, 39, 104);
+                            }
+                        }
+
+                        #botonFormularioEnviar{
+                            color: white;
+                            background-color: #3C559E;
+                            border: solid 1px;
+                            border-radius: 3px;
+                            padding: 8px;
+                            margin-left: 5px;
+                            cursor: pointer;
+                            transition: all 500ms ease-in-out;
+
+                            &:hover{
+                                transform: scale(1.05);
+                                border-color:rgb(19, 39, 104); ;
+                                background-color: rgb(19, 39, 104);
+                            }
+                        }
+                    }
+                }       
+            }
+        }
+
+/* --------------- INICIA LA VISTA HASTA 1200PX  ---------------------*/
+
+@media only screen and  (max-width: 1200px) {
+
+
+    .hero{
+
+        &__ctaPrincipal{
+            margin: 0 0 0 80px;
+        }
+
+        &__imagenPrincipal>img{
+            width: ($heroW)-100px;
+            height: ($heroH)-67px;
+            margin: 0px $medidaBase 0px 0px;
+        }
+
+    }
+
+    
+    /* Inicia sección Servicios */
+
+    .servicios {
+
+        margin: 50px $medidaBase 50px $medidaBase;
+
+        .servicioUno, .servicioDos, .servicioTres {
+            margin: 0px 15px;    
+        }
+
+    }
+
+}
+
+/* --------------- INICIA LA VISTA HASTA 1024PX  ---------------------*/
+
+@media only screen and  (max-width: 1024px) {
+
+
+    .hero{
+
+        margin-bottom: 100px;
+
+        &__tituloPrincipal>h1{
+            font-size:40px;
+        }
+
+        &__descripcionPrincipal>p{
+            font-size:25px;
+        }
+
+
+        &__botonPrincipalUno{
+            font-size: 16px; 
+        }
+
+        &__imagenPrincipal>img{
+            width: ($heroW)-150px;
+            height: ($heroH)-100px;
+            margin: 0px $medidaBase 0px 0px;
+        }
+
+    }
+
+
+
+    /* Inicia sección Portfolio */
+
+
+    .portfolio{
+
+        &__items{
+            margin-right: 0px;
+
+            ul li {
+                font-size: 14px;
+                }
+        }
+
+
+        &__beneficios{
+            font-size: 1rem;
+        }
+
+        &__imagen{
+
+            img {
+                width: ($heroW)-250px;
+                margin: 0 40px;
+                box-shadow:$sombreado;
+                }
+        }
+
+        &__boton{
+            margin-top: auto;
+            padding:10px;
+            }
+        }
+}
+
+/* --------------- INICIA LA VISTA HASTA 950PX  ---------------------*/
+
+@media only screen and  (max-width: 950px) {
+
+    /*Inicia menú*/
+
+    .navbar{
+        margin-bottom: 50px;
+        z-index: 2;
+    }
+
+
+    /* Inicia hero */
+
+    .hero{
+
+        &__ctaPrincipal{
+            margin: 15px $medidaBase 15px $medidaBase;
+            text-align: center;
+        }
+
+        &__tituloPrincipal>h1{
+            font-size:60px;
+            text-align: center;
+        }
+
+        &__descripcionPrincipal>p{
+            font-size:28px;
+            text-align: center;
+        }
+
+
+        &__botonPrincipalUno{
+            font-size: 22px;
+            padding: 6px;  
+        }
+
+        &__imagenPrincipal>img{
+            display: none;
+        }
+
+    }
+
+
+    /* Inicia sección servicios */
+
+    .servicios {
+
+        margin: 0px $medidaBase 50px $medidaBase;
+
+        .servicioUno, .servicioDos, .servicioTres {
+
+            width: ($heroW)-400px;
+            text-align: center;
+            margin: 0px 10px;
+            padding: $medidaBase;
+            border-radius: 15px;
+            box-shadow:$sombreado;
+
+            h4{
+                font-size: 22px;
+            }
+
+            p{
+                font-size: 16px;  
+            }
+
+          
+        }
+
+    }
+
+    /* Inicia sección Portfolio */
+
+
+    
+    .portfolio{
+        margin: 30px 10px 10px 10px;
+
+        &__items{
+            margin: 0 $medidaBase;
+            align-items: center;
+
+            h3{
+                font-size: 28px;
+                margin: 5px 15px 5px 15px;
+            }
+        }
+
+
+        &__beneficios{
+            list-style: none;
+            text-align: center;
+            font-size: 16px;
+            margin: 5px 15px 5px 15px;
+        }
+
+        &__imagen{
+     
+            img {
+                display: none;
+                }
+        }
+
+        &__boton{
+            font-size: 14px;
+            padding: 10px;
+            margin-top: 15px;
+            margin-left: 0px;
+            }
+        }
+
+}
+
+/* --------------- INICIA LA VISTA HASTA 768PX  ---------------------*/
+
+@media only screen and  (max-width: 768px) {
+        
+
+/* Inicia el Main */
+
+
+    /* Inicia sección Hero */
+
+    .hero{
+
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        &__ctaPrincipal{
+            margin: 30px $medidaBase 15px $medidaBase;
+        }
+
+        &__tituloPrincipal>h1{
+            font-size:50px;
+        }
+
+        &__descripcionPrincipal>p{
+            font-size:23px;
+        }
+
+
+        &__botonPrincipalUno{
+            font-size: 18px;
+            padding: 6px;   
+        }
+
+    }
+
+
+    
+    /* Inicia sección Servicios */
+
+
+    .servicios {
+
+        margin:10px 10px;
+        flex-direction: column;
+
+        .servicioUno, .servicioDos, .servicioTres {
+
+            align-items: center;
+            text-align: center;
+            width: 70vw;
+            margin: 10px 5px 30px 5px;
+            padding:40px;
+
+            a{
+                margin: 10px;
+                font-size: 16px; 
+            }
+
+            h4{
+                margin: 10px;
+                font-size: 25px;
+            }
+
+            p{
+                margin: 10px;
+                font-size: 18px;  
+            }
+        }
+
+    }
+
+    /*Inicia sección portfolio*/
+
+
+    .portfolio{
+
+        &__items{
+
+            h3 {
+                text-align: center;
+                }
+            }
+        }
+
+
+       /* Inicia sección Contacto */
+       
+       div.contacto {
+
+            .itemsContacto{
+                margin:10px 10px $medidaBase 10px;
+                text-align: center;
+            }
+    
+        }
+
+    /* Formulario */
+
+
+
+    .contenedorFormulario{
+
+        .formulario{
+            width: 80%;
+
+            fieldset {
+                
+                legend {
+                    font-size: 25px;
+                }
+
+            }       
+        }
+    } 
+
+}
+
+/* --------------- INICIA LA VISTA HASTA 480PX  ---------------------*/
+
+@media only screen and  (max-width: 480px) {
+        
+         
+    /* Inicia el Main */
+    
+    
+        /*Inicia sección hero*/
+
+
+        .hero{
+
+
+            &__tituloPrincipal>h1{
+                font-size: 2rem;
+                 margin: 10px;
+            }
+
+            &__descripcionPrincipal{
+                margin: $medidaBase 30px;
+            }
+
+            &__botonPrincipalUno{
+                margin: 10px;  
+            }
+        }
+
+
+        
+        /* Inicia sección Servicios */
+
+
+        .servicios {
+
+            .servicioUno, .servicioDos, .servicioTres {
+
+                display: inline-block;
+                width: 85%;
+                margin: 10px 5px $medidaBase 5px;
+                padding:$medidaBase 15px;
+
+                a{
+                    margin: 2px 0 0 0;
+
+                    img{
+                        width: $medidaBase*4;
+                        height: $medidaBase*4;
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+
+
+        /* Inicia sección Portfolio */
+
+
+        .portfolio{
+
+            &__items{
+                h3{
+                    font-size: 26px;
+                    }
+                }
+
+            &__beneficios{
+                font-size: 14px;
+
+                li {
+                    margin: 5px;
+                    }
+               }
+        }
+    
+    
+    
+        /* Formulario */
+
+        
+        .contenedorFormulario{
+
+            .formulario{
+                margin: 15px 2px 2px 2px;
+                width: 100%;
+
+                fieldset {
+                    padding: 25px 30px;
+
+                    legend {
+                        font-size: $medidaBase;
+                    }
+
+
+                    .botonesFormulario{
+                        
+                        #botonFormularioBorrar{
+                            display: none;
+
+                        }
+
+                    }
+                }       
+            }
+        }
+}
+
+
+/* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
+
+@media only screen and  (max-width: 320px) {
+        
+    
+    /* Inicia sección Contacto */
+
+        div.contacto {
+        margin: 30px 10px 10px 10px;
+        }
+
+    /* Formulario */
+
+        form.formulario{
+
+        margin: 15px 2px 2px 2px;
+        width: 100%;
+        }
+}
+

@@ -1,0 +1,281 @@
+/*---------------------- PAGINA TRABAJOS -------------------------- */
+
+.heroTrabajos{
+    height: 50vh;
+    background-image: url(../img/heroTrabajos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    z-index: 1;
+
+    h1{
+       color: white;
+       font-size: 5rem;
+    }    
+
+}
+
+.trabajo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__item{
+        text-align: left;
+        background-color: white;
+        margin: -100px 30px 30px 30px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow:2px 2px 10px 1px rgba(0, 0, 0, 0.100);
+
+        img {
+            width: 450px;
+            border: 1px solid rgba(0, 0, 0, 0.055);
+            border-radius: 10px;
+        }
+
+        h3{
+            width: 450px;
+            margin: 10px 0; 
+        }
+
+        p{
+            width: 450px;
+            margin: 10px 0;
+        }
+
+        a{
+            width: 450px;
+            display: inline-block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: rgb(143, 172, 226);
+            font-size: 1.1rem;
+            transition: color 200ms ease-in-out;
+
+            &:hover{
+                color:#002bad;
+            }
+        }
+    }
+}
+
+/* --------------- INICIA LA VISTA HASTA 1200PX  ---------------------*/
+
+@media only screen and  (max-width: 1200px) {
+
+
+
+
+ /* Inicia página trabajos */
+
+    .heroTrabajos{
+        height: 40vh;
+
+        h1{
+          font-size: 4rem;
+          }
+
+    }
+
+    
+    .trabajo {
+
+        &__item{
+            margin: -100px 30px 30px 30px;
+            padding: 40px;
+
+            img {
+                width: 350px;
+            }
+
+            h3{
+                width: 350px;
+            }
+
+            p{
+                width: 350px;
+            }
+
+            a{
+                width: 350px;
+            }
+        }
+    }
+ }
+
+/* --------------- INICIA LA VISTA HASTA 1024PX  ---------------------*/
+
+@media only screen and  (max-width: 1024px) {
+
+
+    /* Inicia página trabajos */
+
+    
+    .heroTrabajos{
+        height: 30vh;
+
+        h1{
+          font-size: 3rem; 
+        }
+
+    }
+
+
+    .trabajo {
+    
+        &__item{
+            margin: -50px 15px 30px 15px;
+            padding: 40px;
+    
+        }
+}
+
+}
+
+
+/* --------------- INICIA LA VISTA HASTA 950PX  ---------------------*/
+
+@media only screen and  (max-width: 950px) {
+
+    /* Inicia página trabajos */
+
+    .heroTrabajos{
+        margin-top: -50px;
+        h1{
+          font-size: 4rem;
+        }
+
+    }
+
+
+    .trabajo {
+
+        flex-direction: column;
+    
+    
+        &__item{
+            margin: 30px 30px 30px 30px;
+    
+            img {
+                width: 500px;
+            }
+    
+            h3{
+                width: 500px;
+            }
+    
+            p{
+                width: 500px;
+            }
+    
+            a{
+                width: 500px;
+
+            }
+        }
+    }
+}
+
+/* --------------- INICIA LA VISTA HASTA 768PX  ---------------------*/
+
+@media only screen and  (max-width: 768px) {
+        
+    /* PAGINA TRABAJOS */
+
+.heroTrabajos{
+    height: 30vh;
+    margin-top: -50px;
+
+    h1{
+      font-size: 3rem;
+    }
+
+}
+
+
+
+    .trabajo {
+
+        flex-direction: column;
+
+
+        &__item{
+            margin: 20px 30px 30px 30px;
+
+            img {
+                width: 350px;
+            }
+
+            h3{
+                width: 350px;
+            }
+
+            p{
+                width: 350px;
+            }
+
+            a{
+                width: 350px;
+
+            }
+        }
+    }
+    
+}
+
+
+
+/* --------------- INICIA LA VISTA HASTA 480PX  ---------------------*/
+
+@media only screen and  (max-width: 480px) {
+ 
+  /* Inicia página trabajos */
+
+  .heroTrabajos{
+    height: 30vh;
+    background-image: none;
+
+    h1{
+        font-size: 3rem;
+        color: royalblue;
+        margin-top: -58px;
+    }
+
+  }
+
+
+    .trabajo {
+        margin: 0px;
+
+
+        &__item{
+            margin: 20px 20px 20px 20px;
+            img {
+                display: none;
+            }
+
+            h3{
+                width: 200px;
+                font-size: 1.2rem;
+            }
+
+            p{
+                width: 200px;
+                font-weight: lighter;
+                font-size: 1rem;
+            }
+
+            a{
+                width: 200px;
+
+            }
+        }
+    }
+
+}

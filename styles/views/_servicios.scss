@@ -1,0 +1,514 @@
+/*Inicia variables*/
+
+$azulClaro: #e7f1ff;
+$naranjaClaro: #fff3e7;
+$rojoClaro: #ffe7e9;
+
+/*Inicia map*/
+
+$temas:(
+    "tema1": $azulClaro,
+    "tema2": $naranjaClaro,
+    "tema3": $rojoClaro,
+);
+
+@each $tema, $fondo, $color in $temas {
+    .#{$tema}{
+        background-color: $fondo;
+    }
+}
+
+
+/*Inicia Main*/
+
+.heroServicios{
+    width: 90vw;
+    margin: auto;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-top: -58px;
+    align-items: center;
+    overflow: hidden;
+
+    &__ctaServicios{
+        grid-column: 3/7;
+
+        h1 {
+            font-size: 55px;
+            text-align: left;
+            }
+
+        p   {
+            font-size: 25px;
+            margin: 0px 0px 10px 0px;
+            } 
+        } 
+
+
+        &__botonServiciosUno{
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            width: 8rem;
+            color: rgb(255, 255, 255);
+            border: solid;
+            background-color: royalblue;
+            border-color: rgb(255, 255, 255);
+            border-width: 1px;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 5px 5px 0px;
+
+            &:hover{
+                color: white;
+                background-color: rgb(0, 35, 141);
+                border-color: white;
+                transition: 0.3s;
+                }
+            }
+
+        &__botonServiciosDos{
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            width: 8rem;
+            color: royalblue;
+            border: solid;
+            background-color: white;
+            border-color: royalblue;
+            border-width: 1px;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 10px;
+
+            &:hover{
+                color: white;
+                background-color: rgba(65, 105, 225, 0.397);
+                border-color: white;
+                transition: 0.3s;
+                }
+            }
+
+    &__imagenServicios{
+        grid-column: 7/10;
+        
+        img {
+            width: 450px;
+            }
+        }
+
+    }
+
+
+
+.beneficiosServicios {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 90vw;
+    margin: auto;
+    height:fit-content;
+    display: grid;
+    align-items: center;
+    grid-row-gap: 25px;
+    grid-column-gap: 35px;
+    
+    h2 {
+       text-align: center;
+       grid-column: 1/-1;
+       margin: 50px;
+       color: #002bad;
+       font-weight: bold;
+       font-family: 'poppins';
+
+       }
+
+    &__contenedorUno{
+       padding: 20px;
+       box-shadow:2px 2px 10px 1px rgba(0, 0, 0, 0.100);
+       grid-column: 2/5;
+       display: flex;
+       align-items: center;
+       }
+
+    &__contenedorDos{
+       padding: 20px;
+       box-shadow:2px 2px 10px 1px rgba(0, 0, 0, 0.100);
+       grid-column: 5/8;
+       display: flex;
+       align-items: center;
+       }
+
+    &__textos{
+
+       h3{
+         font-size: 18px;
+         margin: 5px;
+         }
+
+       p {
+         font-size: 15px;
+         font-weight: 200;
+         margin: 5px;  
+         }
+    }
+
+    &__imagen{
+
+        img{
+           margin:5px;
+           width: 68px;
+           }
+    }
+
+}
+
+.faq{
+    margin-top: 30px;
+
+    .accordion-item{
+        margin: 20px 0px;
+        border: none;
+
+        .accordion-header{
+            box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.100);
+
+            .accordion-button:focus{
+                border-color: white;
+                box-shadow: none;
+            }
+        }
+
+        .clicAccordion{
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+.ctaServicios{
+    height: 300px;
+    background-image: url(../img/ctaDiseñoWeb.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -20px;
+
+    .ctaServicios--cta{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px 0px 0px 0px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.719);
+
+        &__texto p{
+                 margin: 20px 20px 20px 50px;
+                 font-size: 50px;
+                 color: white;
+                 font-weight: bold;
+        }
+
+        &__boton a{
+            display: inline-block;
+            font-size: 25px;
+            width: 16rem;
+            height: 4rem;
+            color: rgb(255, 255, 255);
+            border: solid;
+            background-color: rgba(224, 51, 60, 0.787);
+            border-color: rgb(255, 255, 255);
+            border-width: 1px;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 10px;
+
+            &:hover{
+                color: white;
+                background-color: rgb(255, 61, 71);
+                transition: 0.3s;
+                }
+        }
+        
+    }
+
+}
+
+
+   
+   /* --------------- INICIA LA VISTA HASTA 1024PX  ---------------------*/
+   
+   @media only screen and  (max-width: 1024px) {
+   
+
+       /* Inicia página servicios */
+   
+       .beneficiosServicios {
+       grid-template-columns: repeat(6,1fr);
+
+            &__contenedorUno{
+               grid-column: 1/4;
+               }
+
+            &__contenedorDos{
+               grid-column: 4/7;
+               }
+
+            }
+       }
+   
+   
+   /* --------------- INICIA LA VISTA HASTA 950PX  ---------------------*/
+   
+   @media only screen and  (max-width: 950px) {
+   
+   
+       /* Inicia página servicios */
+
+
+
+       .heroServicios{
+        grid-template-rows: 1fr;
+        height: 300px;
+    
+        &__ctaServicios{
+            margin: 15px 20px 15px 20px;
+            text-align: center;
+            grid-column: 1/-1;
+    
+            h1 {
+                text-align: center;
+                }
+            } 
+    
+        &__imagenServicios{
+            
+            img {
+                display: none;
+                }
+            }
+    
+        }
+      
+       .beneficiosServicios {
+           margin-top: -70px;
+       }
+       
+   }
+   
+   /* --------------- INICIA LA VISTA HASTA 768PX  ---------------------*/
+   
+   @media only screen and  (max-width: 768px) {
+           
+   
+       /* Inicia página servicios */
+
+
+       .heroServicios{
+
+        &__ctaServicios{
+            margin: 80px 20px 15px 20px;
+            }
+        }
+
+    
+       .beneficiosServicios {
+           margin-top: 0px;
+           grid-template-columns: repeat(1,1fr);
+           grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+           grid-row-gap: 1.5rem;
+
+           h2{
+             font-size: 40px;
+             margin: 5px;
+           }
+
+           &__contenedorUno{
+              grid-column: 1;
+              }
+
+           &__contenedorDos{
+               grid-column: 1;
+           }
+           
+           &__textos{
+              
+              h3{
+                margin: 5px;  
+                }
+
+               p{
+                font-size: 14px;
+                font-weight: 200;
+                margin: 5px;
+               }
+           }
+
+           &__imagen{
+
+                img{
+                   margin:5px 5px 5px 25px;
+                   width: 68px;
+                   }
+           }
+
+        }
+
+
+        .ctaServicios{
+        
+            .ctaServicios--cta{
+                
+
+                &__texto p{
+                    font-size: 35px;
+                }
+
+                &__boton{ 
+                display: flex;
+                justify-content: center;
+                
+                    a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    font-size: 20px;
+                    width: 10rem;
+                    height: 3rem;
+                    }
+                
+                }
+            }
+
+        }
+    
+   
+   }
+   
+   
+   
+   /* --------------- INICIA LA VISTA HASTA 480PX  ---------------------*/
+   
+   @media only screen and  (max-width: 480px) {
+    
+   
+       /* Inicia página servicios */
+
+
+       .heroServicios{
+        grid-template-rows: 1fr;
+        height: auto;
+        overflow:visible;
+        margin-bottom: 10px;
+    
+        &__ctaServicios{
+    
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+                margin-bottom: 5px;
+                }
+    
+            p   {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                } 
+            } 
+    
+    
+            &__botonServiciosUno{
+                width: auto;
+                }
+    
+            &__botonServiciosDos{
+                width: auto;
+                }
+    
+        }
+
+        .beneficiosServicios {
+            margin-top: 0px;
+            height: 1150px;
+            row-gap: 1rem;
+ 
+            h2{
+              margin: 30px 30px 30px 30px;
+              }
+ 
+            &__contenedorUno{
+               grid-column: 1;
+               }
+ 
+            &__contenedorDos{
+                grid-column: 1;
+            }
+            
+            &__textos{
+               
+               h3{
+                 font-size:14px;
+                 margin: 5px;  
+                 }
+ 
+                p{
+                 font-size: 12px;
+                 font-weight: 200;
+                 margin: 5px;
+                }
+            }
+ 
+            &__imagen{
+ 
+                 img{
+                    margin:5px 5px 5px 25px;
+                    width: 48px;
+                    }
+            }
+ 
+         }
+   
+         
+        .ctaServicios{
+             height: 200px;
+
+            .ctaServicios--cta{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin: 50px 0px 0px 0px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                height: 200px;
+                background-color: rgba(0, 0, 0, 0.719);
+
+                &__texto p{
+                    margin: 20px 20px 0px 20px;
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                &__boton{ 
+                
+                    a{
+                    font-size: 16px;
+                    font-weight: bold;
+                    width: 10rem;
+                    height: 3rem;
+                    background-color: rgba(224, 51, 60, 0.787);
+                    border-width: 0px;  
+                    }
+                
+                }
+            }
+
+        }
+   
+   }
+   
