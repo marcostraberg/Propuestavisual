@@ -1,6 +1,9 @@
 /* Estilos generales */
 
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
 
@@ -43,25 +46,73 @@ h3, h4 {
 
         /* Inicia sección Menú */
 
+
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
         .logoImagen {
             width: 250px;
         }
 
         .menuLista {
             list-style: none;
+            font-size:0;
+            background-color:rgb(47, 56, 173);
         }
 
         .menuItem {
-            color: black;
+            display: inline-block;
+            width: 25%;
+            position:relative;
+            border: 1px solid white;
+            text-align:center;
+        }
+
+        .subMenu {
+            position: absolute;
+            display: none;
+            width:100%;
+        }
+
+        .subMenu li {
+            display: block;
+            width:100%;
+            border: 1px solid white;
+        }
+        
+        .menuLista li:hover ul {
+            display:block;
+            background-color: royalblue;
+        }
+
+        .menuLista a{
+            color: rgb(255, 255, 255);
             text-decoration-line: none;
             font-size: 18px;
             line-height: 1.8;
+            
         }
+
+    
+         
 
     /* Inicia el Main */
 
 
         /* Inicia sección Hero */
+
+        div.hero{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
 
         .tituloPrincipal>h1{
             color: #002bad;
@@ -79,6 +130,7 @@ h3, h4 {
 
         #botonPrincipalUno{
         
+            display: inline-block;
             font-size: 18px;
             color: royalblue;
             border: solid;
@@ -88,6 +140,7 @@ h3, h4 {
             border-width: 1px;
             text-decoration: none;
             padding: 8px;
+            margin: 50px 0 0 0;
         }
 
         #botonPrincipalUno:hover {
@@ -107,12 +160,16 @@ h3, h4 {
         .servicios {
 
             margin:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
         }
 
         .servicioUno, .servicioDos, .servicioTres {
 
             text-align: center;
+            margin: 0px 30px;
 
         }
 
@@ -130,35 +187,17 @@ h3, h4 {
         }
 
 
-        /* Inicia tabla de servicios */
-
-
-        div.tabla table tr th {
-
-            color: white;
-            background-color:rgb(14, 49, 151);
-            font-size: 20px;
-        }
-        
-        .tablaServicios {
-        
-        background-color: rgb(143, 172, 226);
-        font-size: 18px;
-        font-weight: bold;
-        }
-        
-        div.tabla table tr td {
-        line-height: 1.5;
-
-        }
-
         /* Inicia sección Testimonios */
 
     
         .testimonios {
             background-image: url("../img/fondoTestimonial.jpg");
             background-size: cover;
-            padding: 20px;       
+            height: 300px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;       
         }
 
         .testimonioUno, .testimonioDos, .testimonioTres {
@@ -175,8 +214,36 @@ h3, h4 {
 
         /* Inicia sección Portfolio */
 
+        .portfolio{
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            align-content: center;
+
+        }
+
+        .itemsPortfolio{
+            display: flex;
+            flex-direction: column;
+            margin: 0 40px;
+
+        }
+
+        .tituloPortfolio, .beneficiosPortfolio, #botonPortfolioUno  {
+            margin: 15px;
+        }
+
+
+        .imagenPortfolio img{
+            width: 350px;
+            margin: 0 40px;
+      
+
+        }
+
         #botonPortfolioUno {
             font-size: 13px;
+            width: fit-content;
             color: royalblue;
             border: solid;
             background-color: white;
@@ -198,15 +265,25 @@ h3, h4 {
 
         /* Inicia sección Contacto */
 
+        div.contacto {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+
+        }
+
+        
+
         div.descripcionContacto>p {
             font-size: 20px;
         }
 
         
-        div.iconosContacto>a>i {
-            color: #3C559E;
-            font-size: 25px;
+        div.iconosContacto>a>img {
+            width: 23px;
+            margin: 30px 5px 10px 0px;
         }
+
 
         /* Formulario */
 
@@ -223,6 +300,7 @@ h3, h4 {
        fieldset {
         border-radius: 8px;
         border-color: rgb(143, 172, 226);
+        padding: 25px;
         }       
 
         .campoFormulario {
@@ -231,10 +309,16 @@ h3, h4 {
             border-radius: 2px;
             outline: none;
             color: rgb(143, 172, 226);
+            width: 100%;
         }
 
         .campoFormulario::placeholder { 
-            color: rgb(143, 172, 226); font-weight: lighter; 
+            color: rgb(143, 172, 226); 
+        }
+
+        .botonesFormulario{
+            display: flex;
+            justify-content: center;
         }
 
         #botonFormularioBorrar{
@@ -243,6 +327,7 @@ h3, h4 {
             border: solid 1px;
             border-radius: 3px;
             padding: 8px;
+            margin-right: 5px;
 
         }
 
@@ -252,6 +337,7 @@ h3, h4 {
             border: solid 1px;
             border-radius: 3px;
             padding: 8px;
+            margin-left: 5px;
 
         }
 
@@ -262,6 +348,9 @@ h3, h4 {
             background-color: rgba(101, 136, 243, 0.445);
             padding: 20px;
             margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         .footerUno, .footerDos, .footerTres {
