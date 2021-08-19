@@ -1,62 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Trabajos</title>
 </head>
 <body>
     <!--Inicia el header-->
 
     <header>
+        <section>
 
-        <!--Logo-->
+            <!--Logo-->
 
-        <h1>Logo</h1>
+            <div class="logo">
 
-        <!--Inicia el menú-->
+                <a href="../index.html"><img src="../img/logo.png" alt="Logo Propuestavisual" class="logoImagen"></a>
 
-        <nav>
-            <ul>
-                <li > 
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li><a href="../index.html#servicios">Servicios</a>
-                    <ul>
-                        <li><a href="./Diseño-web.html">Diseño web</a></li>
-                        <li> <a href="./Foto-y-video.html">Foto y video</a></li>
-                        <li> <a href="./Redes-y-publicidad.html">Redes y publicidad</a></li>
+            </div>
+
+            <!--Inicia el menú-->
+
+            <div class="menu">
+                <nav>
+                    <ul class="menuLista">
+                        <li > 
+                            <a href="../index.html" class="menuItem">Inicio</a>
+                        </li>
+                        <li><a href="../index.html#servicios" class="menuItem">Servicios</a>
+                            <ul class="menuLista">
+                                <li><a href="./diseñoWeb.html" class="menuItem">Diseño web</a></li>
+                                <li> <a href="./fotoYvideo.html" class="menuItem">Foto y video</a></li>
+                                <li> <a href="./redesYpublicidad.html" class="menuItem">Redes y publicidad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html#portfolio" class="menuItem">Portfolio</a>
+                            <ul class="menuLista">
+                                <li><a href="./trabajos.html" class="menuItem">Trabajos</a></li>
+                            </ul>
+            
+                        </li>
+                        <li> <a href="../index.html#contacto" class="menuItem">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="../index.html#portfolio">Portfolio</a>
-                    <ul>
-                        <li><a href="./Trabajos.html">Trabajos</a></li>
-                    </ul>
-    
-                </li>
-                <li> <a href="../index.html#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
+                </nav>
+            </div>
+        </section>
     </header>
 
     <!--Título principal de página-->
 
-    <h1>Trabajos</h1>
+    <main>
+        <section>
 
+            <div class="heroPortfolio"">
+
+                <img src="#" alt="imagen portfolio" class="imagenPrincipalPortfolio">
+
+                <div class="tituloPrincipalPortfolio">
+                    <h1>Trabajos</h1>
+                </div>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="muestraportfolio">
+                <img src="#" alt="sitio de muestra" class="imagenMuestraPortfolio">
+                <div class="itemsMuestraPortfolio">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit facere nam mollitia praesentium exercitationem?</p>
+                    <a href="#">VER SITIO</a>
+                </div>
+            </div>
+            <br>
+            <div class="muestraportfolio">
+                <img src="#" alt="sitio de muestra" class="imagenMuestraPortfolio">
+                <div class="itemsMuestraPortfolio">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit facere nam mollitia praesentium exercitationem?</p>
+                    <a href="#">VER SITIO</a>
+                </div>
+            </div>
+            <br>
+            <div class="muestraportfolio">
+                <img src="#" alt="sitio de muestra" class="imagenMuestraPortfolio">
+                <div class="itemsMuestraPortfolio">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit facere nam mollitia praesentium exercitationem?</p>
+                    <a href="#">VER SITIO</a>
+                </div>
+            </div>
+            <br>
+            <div class="muestraportfolio">
+                <img src="#" alt="sitio de muestra" class="imagenMuestraPortfolio">
+                <div class="itemsMuestraPortfolio">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit facere nam mollitia praesentium exercitationem?</p>
+                    <a href="#">VER SITIO</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <hr>
 
     <!--Inicia el footer-->
 
     <footer>
-        
-        <h4>Texto Footer 1</h4>
-        <h4>Texto Footer 2</h4>
-        <h4>Texto Footer 3</h4>
 
-     </footer>
+        <section>
+           <div class="footer">
+
+               <div class="footerUno">
+                   <h4>Texto Footer 1</h4>
+               </div>
+
+               <div class="footerDos">
+                   <h4>Texto Footer 2</h4>
+               </div>
+
+               <div class="footerTres">
+                   <h4>Texto Footer 3</h4>
+               </div>
+
+           </div>
+       </section>
+    </footer>
 
 </body>
 </html>

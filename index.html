@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Traberg | Segundo desafío HTML</title>
+    <title>Marcos Traberg | Cuarto desafío</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,277 +18,356 @@
 
     <header>
 
-        <!--Logo-->
+        <section>
 
-        <h1>Logo</h1>
+            <!--Logo-->
 
-        <!--Inicia el menú-->
+            <div class="logo">
 
-        <nav>
-            <ul>
-                <li > 
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li><a href="#servicios">Servicios</a>
-                    <ul>
-                        <li><a href="./views/Diseño-web.html">Diseño web</a></li>
-                        <li> <a href="./views/Foto-y-video.html">Foto y video</a></li>
-                        <li> <a href="./views/Redes-y-publicidad.html">Redes y publicidad</a></li>
+                <a href="index.html"><img src="./img/logo.png" alt="Logo Propuestavisual" class="logoImagen"></a>
+
+            </div>
+
+            <!--Inicia el menú-->
+
+            <div class="menu">
+                <nav>
+                    <ul class="menuLista">
+                        <li> 
+                            <a href="index.html" class="menuItem">Inicio</a>
+                        </li>
+                        <li><a href="#servicios" class="menuItem">Servicios</a>
+                            <ul class="menuLista">
+                                <li><a href="./views/diseñoWeb.html" class="menuItem">Diseño web</a></li>
+                                <li> <a href="./views/fotoYvideo.html" class="menuItem">Foto y video</a></li>
+                                <li> <a href="./views/redesYpublicidad.html" class="menuItem">Redes y publicidad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#portfolio" class="menuItem">Portfolio</a>
+                            <ul class="menuLista">
+                                <li><a href="./views/trabajos.html" class="menuItem" >Trabajos</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#contacto" class="menuItem">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="#portfolio">Portfolio</a>
-                    <ul>
-                        <li><a href="./views/Trabajos.html">Trabajos</a></li>
-                    </ul>
-    
-                </li>
-                <li> <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
+                </nav>
+            </div>
+        </section>
     </header>
 
     <!--Inicia el main-->
+
+    <!---ID en divs principales solo para anclar menú, estilizar con clase)-->
 
     <main>
 
         <!--Inicia sección hero-->
 
-        <div id="hero">
+        <section>
+            <div class="hero" id="hero">
 
-        <h2>Título principal</h2>
-        <p>Descripción del título princpal</p>
-        <h3>Botón princpal</h3>
+                <div class="tituloPrincipal">
+                    <h1>Título principal</h1>
+                </div>
 
-        </div>
+                <div class="descripcionPrincipal">
+                    <p>Descripción del título principal</p>
+                </div>
 
+                <div class="botonPrincipal">
+                    <a href="#" id="botonPrincipalUno">Botón principal</a>
+                </div>
+
+                <div class="imagenPrincipal">
+                    <img src="./img/hero.png" alt="Imagen principal diseño web">
+                </div>
+
+            </div>
+        </section>
         <hr>
 
         <!--Inicia sección servicios-->
 
-        <div id="servicios">
+        <section>
+            <div class="servicios" id="servicios">
 
-            <h4>Imagen servicio 1</h4>
-            <h4>Título servicio 1</h4>
-            <p>Descripción servicio 1</p>
+                <div class="servicioUno">
+                    <a href="views/diseñoWeb.html"><img src="./img/diseñoWeb.png" alt="Servicio Diseñoweb"></a>
+                    <h4>Título servicio 1</h4>
+                    <p>Descripción servicio 1</p>
+                </div>
 
-            <h4>Imagen servicio 2</h4>
-            <h4>Título servicio 2</h4>
-            <p>Descripción servicio 2</p>
+                <div class="servicioDos">
+                    <a href="views/fotoYvideo.html"><img src="./img/fotoVideo.png" alt="Servicio Foto y Video"></a>
+                    <h4>Título servicio 2</h4>
+                    <p>Descripción servicio 2</p>
+                </div>
 
-            <h4>Imagen servicio 3</h4>
-            <h4>Título servicio 3</h4>
-            <p>Descripción servicio 3</p>
+                <div class="servicioTres">
+                    <a href="views/redesYpublicidad.html"><img src="./img/redes.png" alt="Servicio Redes y Publicidad"></a>
+                    <h4>Título servicio 3</h4>
+                    <p>Descripción servicio 3</p>
+                </div>
 
-        </div>
+            </div>
+        </section>
 
             <!--Inicia tabla de servicios-->
 
-        <table border="1px" cellspacing="3px" cellpadding="15px">
-            <tr>
-                <th>Servicios</th>
-                <th>Descripción</th>
-                <th>Beneficios</th>
-                <th>Precio</th>
-                <th>Detalles</th> 
-            </tr>
-            <tr>
-                <td>Página web</td>
-                <td>Si sos emprendedor o PyME ¿Qué estas esperando? <br><br>
+        <section>
+            <div class="tabla">
+                <table border="1px" cellspacing="3px" cellpadding="15px">
+                    <tr>
+                        <th>Servicios</th>
+                        <th>Descripción</th>
+                        <th>Beneficios</th>
+                        <th>Precio</th>
+                        <th>Detalles</th> 
+                    </tr>
+                    <tr>
+                        <td class="tablaServicios">Página web</td>
+                        <td>Si sos emprendedor o PyME ¿Qué estas esperando? <br><br>
 
-                    ¡Date a conocer y ofrece tu producto o servicio a todo el país!
-                      
-                    <ul>
-                        <li>Llevá tu marca al próximo nivel.</li>
-                        <li>Presencia 24hs.</li>
+                            ¡Date a conocer y ofrece tu producto o servicio a todo el país!
+                            
+                            <ul>
+                                <li>Llevá tu marca al próximo nivel.</li>
+                                <li>Presencia 24hs.</li>
 
-                    </ul>
+                            </ul>
 
-                </td>
-                <td>
-                    <ol>
-                        <li>Diseño personalizado.</li>
-                        <li>Autoadministrable.</li>
-                        <li>Hosting y dominio bonificado el primer año.</li>
-                        <li>Correo corporativo.</li>
-                        <li>Certificado SSL.</li>
-                        <li>Pasarelas de pago.</li>
-                        <li>Métodos de envío.</li>
-                    </ol>
-                </td>
-                <td>$15.000</td>
-                <td><a href="./views/Diseño-web.html">mas info</a></td>
-            </tr>
-            <tr>
-                <td>Foto y video</td>
-                <td>¿Tenés tu plataforma creada pero el contenido es poco profesional o no llama la atención?
-<br><br>
-                 ¡Esta es la opción para vos! Contrata el paquete y nosotros nos ocupamos del contenido. 
-                </td> 
-                <td>
-                    <ol>
-                        <li>Hasta 20 fotos de productos.</li>
-                        <li>Fondo blanco - gris - negro.</li>
-                        <li>Adaptables para web y redes.</li>
-                        <li>Video B-ROLL hasta 1 minuto.</li>
-                        <li>Adaptado para Instagram stories.</li>
-                    </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Diseño personalizado.</li>
+                                <li>Autoadministrable.</li>
+                                <li>Hosting y dominio bonificado el primer año.</li>
+                                <li>Correo corporativo.</li>
+                                <li>Certificado SSL.</li>
+                                <li>Pasarelas de pago.</li>
+                                <li>Métodos de envío.</li>
+                            </ol>
+                        </td>
+                        <td>$15.000</td>
+                        <td><a href="./views/diseñoWeb.html">más info</a></td>
+                    </tr>
+                    <tr>
+                        <td class="tablaServicios">Foto y video</td>
+                        <td>¿Tenés tu plataforma creada pero el contenido es poco profesional o no llama la atención?
+                <br><br>
+                        ¡Esta es la opción para vos! Contrata el paquete y nosotros nos ocupamos del contenido. 
+                        </td> 
+                        <td>
+                            <ol>
+                                <li>Hasta 20 fotos de productos.</li>
+                                <li>Fondo blanco - gris - negro.</li>
+                                <li>Adaptables para web y redes.</li>
+                                <li>Video B-ROLL hasta 1 minuto.</li>
+                                <li>Adaptado para Instagram stories.</li>
+                            </ol>
 
-                </td>
-                <td>$14.000</td>
-                <td><a href="./views/Foto-y-video.html">mas info</a></td>
-            </tr>
-            <tr>
-                <td>Redes y publicidad</td>
-                <td>Manejar las redes de una marca no es una tarea sencilla, requiere de tiempo, conocimiento y esfuerzo.
-                    <br>
-                    Para sacarte esa mochila de encima te presentamos el ¡plan de redes!
-                    <br>
-                    Con una planificación, armado y diseño de contenido 100% pensado para tu marca.
-                    <br>
-                    ¿más?.. si estas preparado para dar el próximo salto ¡también nos encargamos de las campañas publicitarias!   
-                </td>
-                <td>
-                    <ol>
-                        <li>Diseño plan de marketing para redes.</li>
-                        <li>Armado de feed mensual para Instagram.</li>
-                        <li>Campaña Google - Red de búsqueda.</li>
-                        <li>Campaña Google - Red de display.</li>
-                        <li>Campañas Facebook.</li>
-                        <li>Campañas Instagram.</li>
-                        <li>Reportes mensuales.</li>
-                    </ol>
-                </td>
-                <td> Desde: <br> $10.000</td>
-                <td><a href="./views/Redes-y-publicidad.html">mas info</a></td>
-            </tr>
-        
-        </table>
-
+                        </td>
+                        <td>$14.000</td>
+                        <td><a href="./views/fotoYvideo.html">más info</a></td>
+                    </tr>
+                    <tr>
+                        <td class="tablaServicios">Redes y publicidad</td>
+                        <td>Manejar las redes de una marca no es una tarea sencilla, requiere de tiempo, conocimiento y esfuerzo.
+                            <br>
+                            Para sacarte esa mochila de encima te presentamos el ¡plan de redes!
+                            <br>
+                            Con una planificación, armado y diseño de contenido 100% pensado para tu marca.
+                            <br>
+                            ¿más?.. si estas preparado para dar el próximo salto ¡también nos encargamos de las campañas publicitarias!   
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Diseño plan de marketing para redes.</li>
+                                <li>Armado de feed mensual para Instagram.</li>
+                                <li>Campaña Google - Red de búsqueda.</li>
+                                <li>Campaña Google - Red de display.</li>
+                                <li>Campañas Facebook.</li>
+                                <li>Campañas Instagram.</li>
+                                <li>Reportes mensuales.</li>
+                            </ol>
+                        </td>
+                        <td> Desde: <br> $10.000</td>
+                        <td><a href="./views/redesYpublicidad.html">más info</a></td>
+                    </tr>
+                
+                </table>
+            </div>
+        </section>
         <br>
         <hr>
 
         <!--Inicia sección testimonios-->
 
-        <div id="testimonios">
+        <section>
+            <div class="testimonios" id="testimonios">
 
-            <h4>Imagen testimonio 1</h4>
-            <p>Descripción testimonio 1</p>
+                <div class="testimonioUno">
+                    <h4>Imagen testimonio 1</h4>
+                    <p>Descripción testimonio 1</p>
+                </div>
 
-            <h4>Imagen testimonio 2</h4>
-            <p>Descripción testimonio 2</p>
+                <div class="testimonioDos">
+                    <h4>Imagen testimonio 2</h4>
+                    <p>Descripción testimonio 2</p>
+                </div>
 
-            <h4>Imagen testimonio 3</h4>
-            <p>Descripción testimonio 3</p>
+                <div class="testimonioTres">
+                    <h4>Imagen testimonio 3</h4>
+                    <p>Descripción testimonio 3</p>
+                </div>
 
-        </div>
-
+            </div>
+        </section>
         <hr>
 
         <!--Inicia sección portfolio-->
 
-        <div id="portfolio">
+        <section>
+            <div class="portfolio" id="portfolio">
 
-        <h3>Título del servicio Porfolio</h3>
-            <ul>
-                <li>Beneficio 1</li>
-                <li>Beneficio 2</li>
-                <li>Beneficio 3</li>
-            </ul>
-                <h4>Botón del servicio Portfolio</h4>
-        <h3>Imagen del servicio Portfolio</h3>
+                <div class="tituloPortfolio">
+                    <h3>Título del servicio Porfolio</h3>
+                </div>
 
-        </div>
+                <div class="beneficiosPortfolio">
+                    <ul>
+                        <li>Beneficio 1</li>
+                        <li>Beneficio 2</li>
+                        <li>Beneficio 3</li>
+                    </ul>
+                </div>
 
+                <div class="botonPortfolio">
+                    <a href="#" id="botonPortfolioUno">Botón del servicio Portfolio</a>
+                </div>
+
+                <div class="imagenPortfolio">
+                    <h3>Imagen del servicio Portfolio</h3>
+                </div>
+            
+            </div>
+        </section>
         <hr>
 
         <!--Inicia sección contacto-->
 
-        <div id="contacto">
+        <section>
+            <div class="contacto" id="contacto">
 
-        <h3>Título del servicio Contacto</h3>
-            <p>Descripción del servicio Contacto</p>
-                <h5>Ícono de Instagram</h5>
-                <h5>Ícono de Youtube</h5>
-                <h5>Ícono de Whatsapp</h5>
-
-        <form action="#">
-
-            <fieldset>
-
-                <legend> ¡Estemos en contacto! </legend>
-                <br>
-
-                <div>
-                    <label for="text"> Nombre y apellido:</label>
+                <div class="tituloContacto">
+                    <h3>Título del servicio Contacto</h3>
                 </div>
-                <br>
-                    <div>
-                        <input type="text" required placeholder="Ingrese la Información requerida">
-                    </div>
-                <br>
 
-                    <div>
-                    <label for="email"> Email:</label>
+                <div class="descripcionContacto">
+                    <p>Descripción del servicio Contacto</p>
                 </div>
-                <br>
-                    <div>
-                        <input type="email" required placeholder="Ingrese la Información requerida">
-                    </div>
-                <br>
 
-                    <div>
-                    <label for="motivos"> Motivo de contacto:</label>
-                    </div>
-                    <br>
-                    <div>
-                        <select name="motivos" required>
-                            <option value="" disabled selected>Seleccione un motivo</option>
-                            <option value="foto">Foto y video</option>
-                            <option value="web">Diseño web</option>
-                            <option value="redes">Redes y publicidad</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <br>
+                <div class="iconosContacto">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
 
-                    <div>
-                        <label for="newsletter"> ¿Desea recibir las últimas novedades? </label>
-                        <input type="checkbox" name="newsletter" id="">
-                    </div>
-                    <br>
+            </div>
+
+            <br><br>
+
+            <div class="formulario">
+                <form action="#">
+
+                    <fieldset>
+
+                        <legend> ¡Estemos en contacto! </legend>
+                        <br>
+
+                        <div>
+                            <label for="text"> Nombre y apellido:</label>
+                        </div>
+                        <br>
+                            <div>
+                                <input type="text" class="campoFormulario" required placeholder="Ingrese la Información requerida">
+                            </div>
+                        <br>
+
+                            <div>
+                            <label for="email"> Email:</label>
+                        </div>
+                        <br>
+                            <div>
+                                <input type="email" class="campoFormulario" required placeholder="Ingrese la Información requerida">
+                            </div>
+                        <br>
+
+                            <div>
+                            <label for="motivos"> Motivo de contacto:</label>
+                            </div>
+                            <br>
+                            <div>
+                                <select name="motivos" required class="campoFormulario">
+                                    <option value="" disabled selected>Seleccione un motivo</option>
+                                    <option value="foto">Foto y video</option>
+                                    <option value="web">Diseño web</option>
+                                    <option value="redes">Redes y publicidad</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div>
+                                <label for="newsletter"> ¿Desea recibir las últimas novedades? </label>
+                                <input type="checkbox" name="newsletter" id="">
+                            </div>
+                            <br>
 
 
-                    <div>
-                        <label for="comentarios">Detalle su consulta:</label>
-                    </div>
-                    <br>
-                    <div>
-                        <textarea name="text_area" id="" cols="30" rows="10" required placeholder="¿Cómo podemos ayudarte?"></textarea>
-                    </div>
-                    <br>
+                            <div>
+                                <label for="comentarios">Detalle su consulta:</label>
+                            </div>
+                            <br>
+                            <div>
+                                <textarea name="text_area" id="" cols="30" rows="10" required placeholder="¿Cómo podemos ayudarte?" class="campoFormulario"></textarea>
+                            </div>
+                            <br>
 
-                    <div>
-                    <input type="reset" value="Volver a completar">
-                    <input type="submit" value="Enviar formulario">
-                    </div>
+                            <div>
+                            <input type="reset" value="Volver a completar" id="botonFormularioBorrar">
+                            <input type="submit" value="Enviar formulario" id="botonFormularioEnviar"
+                            </div>
 
 
-            </fieldset>
-        </form>
-        </div>
-
+                    </fieldset>
+                </form>
+            </div>
+        </section>
      </main>
 
      <!--Inicia el footer-->
 
      <footer>
-        
-        <h4>Texto Footer 1</h4>
-        <h4>Texto Footer 2</h4>
-        <h4>Texto Footer 3</h4>
 
+         <section>
+            <div class="footer">
+
+                <div class="footerUno">
+                    <h4>Texto Footer 1</h4>
+                </div>
+
+                <div class="footerDos">
+                    <h4>Texto Footer 2</h4>
+                </div>
+
+                <div class="footerTres">
+                    <h4>Texto Footer 3</h4>
+                </div>
+
+            </div>
+        </section>
      </footer>
   
 

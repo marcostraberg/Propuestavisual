@@ -1,0 +1,275 @@
+/* Estilos generales */
+
+* {
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1{
+    color: #002bad;
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+h2{
+    color: #002bad;
+    font-size:40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+h4 {
+
+    font-size: 20px;
+}
+
+h3, h4 {
+    color:#3C559E;
+}
+
+
+/* Estilos individuales */
+
+    /* Inicia el Header */
+
+        /* Inicia sección Menú */
+
+        .logoImagen {
+            width: 250px;
+        }
+
+        .menuLista {
+            list-style: none;
+        }
+
+        .menuItem {
+            color: black;
+            text-decoration-line: none;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+    /* Inicia el Main */
+
+
+        /* Inicia sección Hero */
+
+        .tituloPrincipal>h1{
+            color: #002bad;
+            font-size:50px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: left;
+        
+        }
+
+        div.descripcionPrincipal>p {
+            font-size:28px;
+            text-align: left;
+        }
+
+        #botonPrincipalUno{
+        
+            font-size: 18px;
+            color: royalblue;
+            border: solid;
+            background-color: rgb(255, 255, 255);
+            border-color:royalblue;
+            border-radius: 5px;
+            border-width: 1px;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        #botonPrincipalUno:hover {
+            color: white;
+            background-color: royalblue;
+            transition: 0.3s;
+
+        }
+
+        div.imagenPrincipal>img {
+            width: 650px;
+            height: 433px;
+        }
+
+        /* Inicia sección Servicios */
+
+        .servicios {
+
+            margin:50px;
+
+        }
+
+        .servicioUno, .servicioDos, .servicioTres {
+
+            text-align: center;
+
+        }
+
+        .servicioUno>a>img, .servicioDos>a>img, .servicioTres>a>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .servicioUno>h4, .servicioDos>h4, .servicioTres>h4 {
+            font-size: 28px;
+        }
+
+        .servicioUno>p, .servicioDos>p, .servicioTres>p {
+            font-size: 20px;
+        }
+
+
+        /* Inicia tabla de servicios */
+
+
+        div.tabla table tr th {
+
+            color: white;
+            background-color:rgb(14, 49, 151);
+            font-size: 20px;
+        }
+        
+        .tablaServicios {
+        
+        background-color: rgb(143, 172, 226);
+        font-size: 18px;
+        font-weight: bold;
+        }
+        
+        div.tabla table tr td {
+        line-height: 1.5;
+
+        }
+
+        /* Inicia sección Testimonios */
+
+    
+        .testimonios {
+            background-image: url("../img/fondoTestimonial.jpg");
+            background-size: cover;
+            padding: 20px;       
+        }
+
+        .testimonioUno, .testimonioDos, .testimonioTres {
+            text-align: center;
+        }
+
+        .testimonioUno>h4, .testimonioDos>h4, .testimonioTres>h4 {
+            font-size: 28px;
+        }
+
+        .testimonioUno>p, .testimonioDos>p, .testimonioTres>p {
+            font-size: 20px;
+        }
+
+        /* Inicia sección Portfolio */
+
+        #botonPortfolioUno {
+            font-size: 13px;
+            color: royalblue;
+            border: solid;
+            background-color: white;
+            border-color: royalblue;
+            border-width: 1px;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 5px;
+
+        }
+
+        #botonPortfolioUno:hover {
+            color: white;
+            background-color: royalblue;
+            transition: 0.3s;
+
+        }
+
+
+        /* Inicia sección Contacto */
+
+        div.descripcionContacto>p {
+            font-size: 20px;
+        }
+
+        
+        div.iconosContacto>a>i {
+            color: #3C559E;
+            font-size: 25px;
+        }
+
+        /* Formulario */
+
+       form {
+        width: fit-content;
+       }
+
+       form>fieldset>legend {
+        font-size: 20px;
+        font-weight: bold;
+       }
+
+
+       fieldset {
+        border-radius: 8px;
+        border-color: rgb(143, 172, 226);
+        }       
+
+        .campoFormulario {
+            border: 1px solid;
+            border-color: rgb(143, 172, 226);
+            border-radius: 2px;
+            outline: none;
+            color: rgb(143, 172, 226);
+        }
+
+        .campoFormulario::placeholder { 
+            color: rgb(143, 172, 226); font-weight: lighter; 
+        }
+
+        #botonFormularioBorrar{
+            color: white;
+            background-color: rgb(214, 103, 103);
+            border: solid 1px;
+            border-radius: 3px;
+            padding: 8px;
+
+        }
+
+       #botonFormularioEnviar{
+            color: white;
+            background-color: rgb(103, 214, 140);
+            border: solid 1px;
+            border-radius: 3px;
+            padding: 8px;
+
+        }
+
+
+        /* Footer */
+
+        .footer{
+            background-color: rgba(101, 136, 243, 0.445);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footerUno, .footerDos, .footerTres {
+
+            text-align: center;
+
+        }
+
+
+
+
