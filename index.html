@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Traberg | Sexto desafío</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Propuestavisual | Tu marca se ve bien ;)</title>
+    <!--Bootstrap-->
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -17,37 +20,44 @@
 
 <body>
     
-    <!--Inicia el header-->
         
-<header>
-        
-                <!--Inicia el menú-->
-        
-<section>
-        <nav>
-            <a href="./index.html"><img src="./img/logo.png" alt="Logo Propuestavisual" class="logoImagen"></img></a>
-            
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a>
-                <ul>
-                    <li><a href="./views/diseñoWeb.html">Diseño web</a></li>
-                    <li><a href="./views/fotoYvideo.html">Foto y video</a></li>
-                    <li><a href="./views/redesYpublicidad.html">Social media</a></li>
-                </ul>
-                </li>
-                <li><a href="#portfolio">Portfolio</a>
-                <ul>
-                    <li><a href="./views/trabajos.html">Trabajos</a></li>
-                </ul>
-                </li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            
-          </nav>
+         <!--Inicia el menú-->
 
-        </section>
-  </header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-#fff">
+                    <div class="container">
+                      <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo propuestavisual" class="logoImagen"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                        <ul class="navbar-nav align-items-center">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item dropdown text-center">
+                            <a class="nav-link dropdown-toggle" href="./index.html#servicios" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                              Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./views/diseñoWeb.html">Diseño web</a></li>
+                              <li><a class="dropdown-item" href="./views/fotoYvideo.html">Foto y video</a></li>
+                              <li><a class="dropdown-item" href="./views/redesYpublicidad.html">Social media</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown text-center">
+                            <a class="nav-link dropdown-toggle" href="./index.html#portfolio" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Portfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./views/trabajos.html">Trabajos</a></li>
+                            </ul>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./index.html#contacto">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>       
 
     <!--Inicia el main-->
 
@@ -119,28 +129,61 @@
 
         <!--Inicia sección testimonios-->
 
-        <section>
-
+            <div class="slider-area" data-aos="fade-up" data-aos-duration="1000">
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="3000" >
+                           <div class="img-area">
+                               <img class="img-fluid" src="./img/testimonioUno.png" alt="">
+                           </div>
+                           <div class="carousel-caption">
+                            <h3>Paula Flores</h3>
+                            <p>"Me costaba manejar las redes y me sacaron un peso gigante de encima"</p>
+                          </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <div class="img-area">
+                                <img class="img-fluid" src="./img/testimonioDos.png" alt="">
+                            </div>
+                            <div class="carousel-caption">
+                             <h3>Augusto Rodríguez</h3>
+                             <p>"Super amables y profesionales. El sitio quedó genial"</p>
+                           </div>
+                           </div>
+                           <div class="carousel-item" data-bs-interval="3000">
+                            <div class="img-area">
+                                <img class="img-fluid" src="./img/testimonioTres.png" alt="">
+                            </div>
+                            <div class="carousel-caption">
+                             <h3>Micaela Paez</h3>
+                             <p>"Siempre atentos y con buena onda. Los super recomiendo"</p>
+                           </div>
+                           </div>
+                          
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
             
-            <div class="testimonios" id="testimonios" data-aos="fade-up" data-aos-duration="1000">
-
-                <div class="testimonioUno">
-                    <img src="./img/testimonioUno.png" alt="testimonio servicio">
-                    <p>"Me costaba mucho manejar las redes y me sacaron un peso gigante de encima."</p>
                 </div>
-
-                <div class="testimonioDos">
-                    <img src="./img/testimonioDos.png" alt="testimonio servicio">
-                    <p>"Super amables y profesionales. El sitio quedo genial"</p>
-                </div>
-
-                <div class="testimonioTres">
-                    <img src="./img/testimonioTres.png" alt="testimonio servicio">
-                    <p>"Siempre atentos y con buena onda. Los super recomiendo"</p>
-                </div>
-
             </div>
-        </section>
+
+
+
+
+    </section>
 
         <!--Inicia sección portfolio-->
 
@@ -256,7 +299,9 @@
                     </form>
                 </div>
             </div>
+
         </section>
+
      </main>
 
     <!--Inicia el footer-->
@@ -285,6 +330,7 @@
         </div>
         </section>
         </footer>
+
   
         <script>  
             AOS.init({
@@ -292,5 +338,7 @@
             });
         </script>
         
+         <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
