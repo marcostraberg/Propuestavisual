@@ -375,13 +375,13 @@ $heroW:650px;
     .hero{
 
         &__ctaPrincipal{
-            margin: 0 0 0 80px;
+            margin: 0 0 0 50px;
         }
 
         &__imagenPrincipal>img{
-            width: ($heroW)-100px;
-            height: ($heroH)-67px;
-            margin: 0px $medidaBase 0px 0px;
+            width: ($heroW)-150px;
+            height: ($heroH)-100px;
+            margin: 0px;
         }
 
     }
