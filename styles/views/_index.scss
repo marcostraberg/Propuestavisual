@@ -173,6 +173,7 @@ $heroW:650px;
             justify-content: center;
             margin: $medidaBase+10px;
             align-content: center;
+            overflow: hidden;
 
             &__items{
                 display: flex;

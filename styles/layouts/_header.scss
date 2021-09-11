@@ -26,6 +26,18 @@
                 font-size: 1rem;
               }    
         }
+
+/* --------------- INICIA LA VISTA HASTA 480PX  ---------------------*/
+
+@media only screen and  (max-width: 480px) {
+ 
+    .navbar{
+
+        .logoImagen {
+            width: 220px;
+        }
+    }
+}
         
 
         
