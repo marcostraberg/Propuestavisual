@@ -311,7 +311,7 @@ $temas:(
        .heroServicios{
 
         &__ctaServicios{
-            margin: 80px 20px 15px 20px;
+            margin: 50px 20px 15px 20px;
             }
         }
 
@@ -406,6 +406,7 @@ $temas:(
         margin-bottom: 10px;
     
         &__ctaServicios{
+            margin: 50px 20px 15px 20px;
     
             h1 {
                 font-size: 3rem;
@@ -513,3 +514,19 @@ $temas:(
    
    }
    
+
+    /* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
+   
+    @media only screen and  (max-width: 320px) {
+    
+   
+        /* Inicia página servicios */
+ 
+ 
+         .beneficiosServicios {
+             margin-top: 0px;
+             height: 1300px;
+             row-gap: 1rem;
+  
+         }
+    }
