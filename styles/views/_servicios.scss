@@ -23,7 +23,7 @@ $temas:(
 
 .heroServicios{
     width: 90vw;
-    margin:auto;
+    margin: auto;
     height: 420px;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -276,7 +276,7 @@ $temas:(
         height: 300px;
     
         &__ctaServicios{
-            margin: 30px 20px 15px 20px;
+            margin: 15px 20px 15px 20px;
             text-align: center;
             grid-column: 1/-1;
     
@@ -311,7 +311,7 @@ $temas:(
        .heroServicios{
 
         &__ctaServicios{
-            margin: 50px 20px 15px 20px;
+            margin: 80px 20px 15px 20px;
             }
         }
 
@@ -510,17 +510,6 @@ $temas:(
             }
 
         }
-
+   
    }
    
-   /* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
-   
-   @media only screen and  (max-width: 320px) {
-   
-
-    /* Inicia página servicios */
-
-    .faq {
-        margin-top: 70px;
-        }
-    }
