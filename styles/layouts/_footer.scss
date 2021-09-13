@@ -111,27 +111,28 @@
 @media only screen and  (max-width: 480px) {
 
     .footer{
+        flex-direction: column;
         padding: 15px;
 
         .footer--uno{
             margin: 5px;
 
                 &__cta{
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     }
                 }
 
         .footer--dos{
             margin: 5px;
                 &__titulo{
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     }
                 }
 
         .footer--tres{
             margin: 5px;
                 &__iconos{
-                    width: 14px;
+                    width: 16px;
                     margin: 5px 6px 5PX 6px;
                     }
                 }     

@@ -38,6 +38,18 @@
         }
     }
 }
+
+/* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
+
+@media only screen and  (max-width: 320px) {
+ 
+    .navbar{
+
+        .logoImagen {
+            width: 190px;
+        }
+    }
+}
         
 
         

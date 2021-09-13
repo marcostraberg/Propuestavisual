@@ -545,7 +545,7 @@ $heroW:650px;
 
     
     .portfolio{
-        margin: 30px 10px 10px 10px;
+        margin: -20px 10px 10px 10px;
 
         &__items{
             margin: 0 $medidaBase;
@@ -553,7 +553,7 @@ $heroW:650px;
 
             h3{
                 font-size: 28px;
-                margin: 5px 15px 5px 15px;
+                margin: 5px 15px 15px 15px;
             }
         }
 
@@ -562,7 +562,12 @@ $heroW:650px;
             list-style: none;
             text-align: center;
             font-size: 16px;
-            margin: 5px 15px 5px 15px;
+            margin: 5px 15px 10px 15px;
+            padding: 0px;
+
+            li{
+                margin:15px 0px;
+            }
         }
 
         &__imagen{
@@ -575,9 +580,14 @@ $heroW:650px;
         &__boton{
             font-size: 14px;
             padding: 10px;
-            margin-top: 15px;
+            margin-top: 10px;
             margin-left: 0px;
             }
+        }
+
+
+        div.contacto{
+            margin: 70px 10px 10px 10px;
         }
 
 }
@@ -712,6 +722,7 @@ $heroW:650px;
 
         .hero{
 
+            margin-top: -40px;
 
             &__tituloPrincipal>h1{
                 font-size: 2rem;
@@ -720,6 +731,9 @@ $heroW:650px;
 
             &__descripcionPrincipal{
                 margin: $medidaBase 30px;
+                p{
+                    font-size: 20px;
+                }
             }
 
             &__botonPrincipalUno{
@@ -761,12 +775,16 @@ $heroW:650px;
 
             &__items{
                 h3{
-                    font-size: 26px;
+                    font-size: 22px;
                     }
+                ul>li{
+                    font-size: 13px;
+                }
                 }
 
             &__beneficios{
                 font-size: 14px;
+                padding-left: 0px;
 
                 li {
                     margin: 5px;
@@ -775,6 +793,16 @@ $heroW:650px;
         }
     
     
+        div.contacto{
+            
+            .itemsContacto{
+            
+                hr{
+                    width: 20vw;
+                }
+            }
+        }
+
     
         /* Formulario */
 
@@ -810,12 +838,19 @@ $heroW:650px;
 /* --------------- INICIA LA VISTA HASTA 320PX  ---------------------*/
 
 @media only screen and  (max-width: 320px) {
+
+
+    /*Inicia sección portfolio*/
+
+       .portfolio{
+           display: none;
+       }
         
     
     /* Inicia sección Contacto */
 
         div.contacto {
-        margin: 30px 10px 10px 10px;
+        margin: -10px 10px 10px 10px;
         }
 
     /* Formulario */
